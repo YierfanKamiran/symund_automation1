@@ -1,0 +1,199 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-17T23:56:15.678Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6600542000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Login with invalid information",
+        "description": "",
+        "id": "the-user-should-be-able-to-login;login-with-invalid-information;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 168856000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1107000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1630010000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user enters \"Employee\" and \"Employee123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Employee123\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49889000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user should see \"Wrong username or password.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wrong username or password.\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_should_see(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-17T23:56:24.222Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5848260000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Login with invalid information",
+        "description": "",
+        "id": "the-user-should-be-able-to-login;login-with-invalid-information;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 112809000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 779000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2270692000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user enters \"Employee199\" and \"Employee\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee199\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Employee\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37164000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user should see \"Wrong username or password.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wrong username or password.\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_should_see(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      }
+    ],
+    "name": "the user should be able to login",
+    "description": "",
+    "id": "the-user-should-be-able-to-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]

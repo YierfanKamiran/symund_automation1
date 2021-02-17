@@ -8,6 +8,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 
 public class LoginStepDefs {
 
@@ -28,6 +31,26 @@ public class LoginStepDefs {
 
        expectedTitle="Files - Symund - QA";
         Assert.assertEquals(expectedTitle, Driver.get().getTitle());
+
+    }
+
+    @When("the user enters {string} and {string}")
+    public void the_user_enters_and(String username, String password) {
+        new LoginPage().loginwithInvalidInfo(username,password);
+    }
+
+    @Then("the user should see {string}")
+    public void the_user_should_see(String expectedMessage) {
+
+//        JavascriptExecutor js = (JavascriptExecutor)Driver.get();
+//        WebElement field = Driver.get().findElement(By.id("submit-wrapper"));
+//        Boolean is_valid = (Boolean)js.executeScript("return arguments[0].checkValidity();", field);
+//        String actualMessage = (String)js.executeScript("return arguments[0].validationMessage;", field);
+//
+//        Assert.assertEquals(message,actualMessage);
+
+        String actualMessage = new LoginPage().errorMessage.getText();
+        Assert.assertEquals(expectedMessage,actualMessage);
 
     }
 
