@@ -13,7 +13,7 @@ formatter.scenarioOutline({
       "name": "@wip"
     },
     {
-      "name": "@negative"
+      "name": "@negative_blank"
     }
   ]
 });
@@ -26,7 +26,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "name": "the user should see \"Wrong username or password.\"",
+  "name": "the user should see \"Please fill in this field.\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -42,14 +42,14 @@ formatter.examples({
     },
     {
       "cells": [
-        "Employee",
-        "Employee123"
+        "Employee199",
+        ""
       ]
     },
     {
       "cells": [
-        "Employee199",
-        "Employee"
+        "",
+        ""
       ]
     }
   ]
@@ -63,7 +63,7 @@ formatter.scenario({
       "name": "@wip"
     },
     {
-      "name": "@negative"
+      "name": "@negative_blank"
     }
   ]
 });
@@ -81,7 +81,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enters \"Employee\" and \"Employee123\"",
+  "name": "the user enters \"Employee199\" and \"\"",
   "keyword": "When "
 });
 formatter.match({
@@ -91,7 +91,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should see \"Wrong username or password.\"",
+  "name": "the user should see \"Please fill in this field.\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -112,7 +112,7 @@ formatter.scenario({
       "name": "@wip"
     },
     {
-      "name": "@negative"
+      "name": "@negative_blank"
     }
   ]
 });
@@ -130,7 +130,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enters \"Employee199\" and \"Employee\"",
+  "name": "the user enters \"\" and \"\"",
   "keyword": "When "
 });
 formatter.match({
@@ -140,7 +140,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should see \"Wrong username or password.\"",
+  "name": "the user should see \"Please fill in this field.\"",
   "keyword": "Then "
 });
 formatter.match({

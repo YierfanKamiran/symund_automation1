@@ -39,18 +39,22 @@ public class LoginStepDefs {
         new LoginPage().loginwithInvalidInfo(username,password);
     }
 
+    @Then("the user should see {string} message diplayed")
+    public void the_user_should_see_message_diplayed(String expectedMessage) {
+        String actualMessage = new LoginPage().errorMessage.getText();
+        Assert.assertEquals(expectedMessage,actualMessage);
+
+    }
     @Then("the user should see {string}")
     public void the_user_should_see(String expectedMessage) {
 
-//        JavascriptExecutor js = (JavascriptExecutor)Driver.get();
-//        WebElement field = Driver.get().findElement(By.id("submit-wrapper"));
-//        Boolean is_valid = (Boolean)js.executeScript("return arguments[0].checkValidity();", field);
-//        String actualMessage = (String)js.executeScript("return arguments[0].validationMessage;", field);
-//
-//        Assert.assertEquals(message,actualMessage);
+        JavascriptExecutor js = (JavascriptExecutor)Driver.get();
+        WebElement field = Driver.get().findElement(By.id("password"));
+        Boolean is_valid = (Boolean)js.executeScript("return arguments[0].checkValidity();", field);
+        String actualMessage = (String)js.executeScript("return arguments[0].validationMessage;", field);
 
-        String actualMessage = new LoginPage().errorMessage.getText();
         Assert.assertEquals(expectedMessage,actualMessage);
+
 
     }
 
