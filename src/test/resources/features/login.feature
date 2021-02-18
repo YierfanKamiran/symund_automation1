@@ -11,7 +11,6 @@ Feature: the user should be able to login
 
   @SYM-144 @negative
   Scenario Outline: The user should be able to login
-    Given the user is on the login page
     When the user enters "<username>" and "<password>"
     Then the "url" should change
 
