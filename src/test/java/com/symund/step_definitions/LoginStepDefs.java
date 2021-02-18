@@ -39,7 +39,7 @@ public class LoginStepDefs {
         new LoginPage().loginwithInvalidInfo(username,password);
     }
 
-    @Then("the user should see {string} message diplayed")
+    @Then("the user should see {string} message displayed")
     public void the_user_should_see_message_diplayed(String expectedMessage) {
         String actualMessage = new LoginPage().errorMessage.getText();
         Assert.assertEquals(expectedMessage,actualMessage);
@@ -56,6 +56,15 @@ public class LoginStepDefs {
         Assert.assertEquals(expectedMessage,actualMessage);
 
 
+    }
+
+
+    @Then("the {string} should change")
+    public void the_should_change(String expectedUrl) {
+
+        expectedUrl="https://qa.symund.com/index.php/apps/files/?dir=/&fileid=2314";
+        String currentUrl = Driver.get().getCurrentUrl();
+        Assert.assertNotEquals(expectedUrl,currentUrl);
     }
 
 }
