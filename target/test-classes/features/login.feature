@@ -1,17 +1,16 @@
-@wip
+
 Feature: the user should be able to login
 
   Background:
     Given the user is on the login page
 
-  @positive
+  @wip @SYM-143 @positive
   Scenario: Login as an employee
     When the user enters employee information
     Then the title contains "Files - Symund - QA"
 
- @negative
+  @SYM-144 @negative
   Scenario Outline: The user should be able to login
-    Given the user is on the login page
     When the user enters "<username>" and "<password>"
     Then the "url" should change
 

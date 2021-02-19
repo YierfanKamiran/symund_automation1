@@ -39,12 +39,7 @@ public class LoginStepDefs {
         new LoginPage().loginwithInvalidInfo(username,password);
     }
 
-    @Then("the user should see {string} message displayed")
-    public void the_user_should_see_message_diplayed(String expectedMessage) {
-        String actualMessage = new LoginPage().errorMessage.getText();
-        Assert.assertEquals(expectedMessage,actualMessage);
 
-    }
     @Then("the user should see {string}")
     public void the_user_should_see(String expectedMessage) {
 
@@ -52,12 +47,9 @@ public class LoginStepDefs {
         WebElement field = Driver.get().findElement(By.id("password"));
         Boolean is_valid = (Boolean)js.executeScript("return arguments[0].checkValidity();", field);
         String actualMessage = (String)js.executeScript("return arguments[0].validationMessage;", field);
-
         Assert.assertEquals(expectedMessage,actualMessage);
 
-
     }
-
 
     @Then("the {string} should change")
     public void the_should_change(String expectedUrl) {
