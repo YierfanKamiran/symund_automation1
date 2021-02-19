@@ -8,55 +8,45 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+
 
 public class LoginStepDefs {
 
+
+ @Given("the user is logged in as {string}")
+public void the_user_is_logged_in_as(String username) {
+    new LoginPage().login(username);
+     BrowserUtils.waitFor(2);
+}
+
+
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
-
         System.out.println("The user is in Login Page");
     }
 
-    @When("the user enters employee information")
-    public void the_user_enters_employee_information() {
-       new LoginPage().login();
-        BrowserUtils.waitFor(2);
+
+    @Then("the title should contain {string}")
+    public void the_title_should_contain(String expectedTitle) {
+        expectedTitle="Files - Symund - QA";
+        String actualTitle= Driver.get().getTitle();
+        Assert.assertTrue(actualTitle.contains(expectedTitle));
     }
 
-    @Then("the title contains {string}")
-    public void the_title_contains(String expectedTitle) {
-
-       expectedTitle="Files - Symund - QA";
-        Assert.assertEquals(expectedTitle, Driver.get().getTitle());
-
-    }
 
     @When("the user enters {string} and {string}")
     public void the_user_enters_and(String username, String password) {
-        new LoginPage().loginwithInvalidInfo(username,password);
+        new LoginPage().login(username,password);
+        BrowserUtils.waitFor(2);
     }
 
 
-    @Then("the user should see {string}")
-    public void the_user_should_see(String expectedMessage) {
-
-        JavascriptExecutor js = (JavascriptExecutor)Driver.get();
-        WebElement field = Driver.get().findElement(By.id("password"));
-        Boolean is_valid = (Boolean)js.executeScript("return arguments[0].checkValidity();", field);
-        String actualMessage = (String)js.executeScript("return arguments[0].validationMessage;", field);
-        Assert.assertEquals(expectedMessage,actualMessage);
-
-    }
-
-    @Then("the {string} should change")
-    public void the_should_change(String expectedUrl) {
-
+    @Then("the url should change to {string}")
+    public void the_url_should_change_to(String expectedUrl) {
         expectedUrl="https://qa.symund.com/index.php/apps/files/?dir=/&fileid=2314";
         String currentUrl = Driver.get().getCurrentUrl();
         Assert.assertNotEquals(expectedUrl,currentUrl);
     }
+
 
 }

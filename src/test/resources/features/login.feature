@@ -1,18 +1,19 @@
-
+@wip
 Feature: the user should be able to login
 
   Background:
     Given the user is on the login page
 
-  @wip @SYM-143 @positive
-  Scenario: Login as an employee
-    When the user enters employee information
-    Then the title contains "Files - Symund - QA"
+    @SYM-143 @positive
+   Scenario: Successful Login with valid credentials
+     When the user enters "Employee199" and "Employee123"
+     Then the title should contain "Files - Symund - QA"
 
-  @SYM-144 @negative
-  Scenario Outline: The user should be able to login
+
+   @SYM-144 @negative
+  Scenario Outline: Unsuccessful login with invalid credentials
     When the user enters "<username>" and "<password>"
-    Then the "url" should change
+    Then the url should change to "url"
 
     Examples:
       | username    | password    |
@@ -23,25 +24,8 @@ Feature: the user should be able to login
       | Employee199 |             |
       |             |             |
 
-#  @negative
-#  Scenario Outline: Login with invalid information
-#    When the user enters "<username>" and "<password>"
-#    Then the user should see "Wrong username or password." message displayed
-#
-#    Examples:
-#      | username    | password    |
-#      | Employee    | Employee123 |
-#      | Employee199 | Employee    |
-#
-#
-#  @negative_blank
-#  Scenario Outline: Login with invalid information
-#    When the user enters "<username>" and "<password>"
-#    Then the user should see "Please fill in this field."
-#
-#    Examples:
-#      | username    | password    |
-#      |             | Employee123 |
-#      | Employee199 |             |
-#      |             |             |
+@login
+Scenario: the user should be able to login successfully
+ Given the user is logged in as "Employee120"
+  Then the title should contain "Files - Symund - QA"
 

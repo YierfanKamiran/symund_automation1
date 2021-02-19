@@ -24,8 +24,8 @@ public class LoginPage {
     @FindBy(xpath = "//*[contains(text(),'Wrong username or password.')]")
     public WebElement errorMessage;
 
-    public void login() {
-      String userNameStr=ConfigurationReader.get("username");
+
+    public void login(String userNameStr ) {
       String passwordStr=ConfigurationReader.get("password");
         userName.sendKeys(userNameStr);
         passWord.sendKeys(passwordStr);
@@ -33,11 +33,10 @@ public class LoginPage {
 
     }
 
-    public void loginwithInvalidInfo(String usernameStr,String passwordStr){
+    public void login(String usernameStr,String passwordStr){
         userName.sendKeys(usernameStr);
         passWord.sendKeys(passwordStr);
         submit.click();
     }
-
 
 }
