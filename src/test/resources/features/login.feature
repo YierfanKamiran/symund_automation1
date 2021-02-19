@@ -6,7 +6,7 @@ Feature: the user should be able to login
 
     @SYM-143 @positive
    Scenario: Successful Login with valid credentials
-     When the user enters "Employee199" and "Employee123"
+     When the user enters "Employee100" and "Employee123"
      Then the title should contain "Files - Symund - QA"
 
 

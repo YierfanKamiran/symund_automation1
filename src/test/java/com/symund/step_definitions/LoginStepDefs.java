@@ -14,7 +14,7 @@ public class LoginStepDefs {
 
 
  @Given("the user is logged in as {string}")
-public void the_user_is_logged_in_as(String username) {
+   public void the_user_is_logged_in_as(String username) {
     new LoginPage().login(username);
      BrowserUtils.waitFor(2);
 }
