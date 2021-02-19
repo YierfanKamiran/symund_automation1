@@ -23,14 +23,21 @@ public abstract class BasePage {
     @FindBy(linkText = "Files")
     public WebElement allFilesTab;
 
-    @FindBy(id = "settings")
-    public WebElement settings;
+    @FindBy(css = "#settings>div>div")
+    public WebElement settingsMenu;
+
+    @FindBy(css = "#expanddiv>ul>li")
+    public List<WebElement>settingsMenuOptions;
 
     @FindBy(id = "app-navigation-toggle")
     public WebElement navigationMenu;
 
     @FindBy(tagName = "title")
     public WebElement pageSubTitle;
+
+    @FindBy(linkText = "Set status")
+    public WebElement setStatus;
+
 
     /**
      *This method will navigate user to the specific tab
@@ -49,8 +56,20 @@ public abstract class BasePage {
      * @return page name, for example: Contacts - Symund - QA
      *
      */
-public String getPageSubtitle(){
-    return  pageSubTitle.getText();
-}
+      public String getPageSubtitle(){
 
-}
+         return  pageSubTitle.getText();
+     }
+
+    /**
+     *This method will navigate user to the specific menu option inside Settings option
+     * @param option
+     */
+     public void getSettingsMenuOption(String option){
+         for (WebElement settingsMenuOption : settingsMenuOptions) {
+             if(option.equals(settingsMenuOption.getText()))
+                 settingsMenuOption.click();
+
+         }
+     }
+  }
