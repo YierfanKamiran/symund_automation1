@@ -3,11 +3,10 @@ package com.symund.step_definitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
 public class profileSettingStepDefs {
 
-    @Given("the user enters\"Profile\" and {string}")
-    public void the_user_enters_Profile_and(String string) {
+    @Given("the user navigates {string} , {string}")
+    public void the_user_navigates(String string, String string2) {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
@@ -29,5 +28,4 @@ public class profileSettingStepDefs {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
-
 }
