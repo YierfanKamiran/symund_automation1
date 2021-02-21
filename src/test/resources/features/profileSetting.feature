@@ -1,3 +1,5 @@
+
+@login
 Feature:
 
   Scenario: user should be able to change  profile settings
