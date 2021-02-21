@@ -19,6 +19,32 @@ public class profileSettingPage extends BasePage {
     @FindBy(xpath = "//*[@id='expanddiv']/ul/li[2]/a")
     public WebElement Settings;
 
+    @FindBy(id="displayname")
+    public WebElement Fullname;
+
+    @FindBy(id="email")
+    public WebElement Email;
+
+    @FindBy(id="phone")
+    public WebElement phone;
+
+    @FindBy(id="address")
+    public WebElement Adress;
+
+    @FindBy(id="website")
+    public WebElement Website;
+
+    @FindBy(id="languageinput")
+    public WebElement Language;
+
+    @FindBy(id="twitter")
+    public WebElement Twitter;
+
+    @FindBy(id="localeinput")
+    public WebElement Locale;
+
+
+
 
 
 
