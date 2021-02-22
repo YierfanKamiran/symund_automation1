@@ -7,7 +7,7 @@ Feature:
     Given the user is logged in as "Employee100"
     And the user navigates avatar
     And the user clicks Setting button
-    And the user is in the profile setting page
+    And the title should contain "Settings - Symund - QA"
     When the user enters information below
 
     | Full name    | Mike Smith            |

@@ -26,14 +26,8 @@ public class ProfilesettingStepDefs {
 
     }
 
-    @Given("the user is in the profile setting page")
-    public void the_user_is_in_the_profile_setting_page() {
-        System.out.println("the user is in the setting page");
 
-    }
-
-
-        @When("the user enters information below")
+    @When("the user enters information below")
         public void the_user_enters_information_below (io.cucumber.datatable.DataTable dataTable){
             // Write code here that turns the phrase above into concrete actions
             // For automatic transformation, change DataTable to one of
