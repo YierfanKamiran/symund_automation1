@@ -14,7 +14,7 @@ public class profileSettingPage extends BasePage {
 
 
     @FindBy(css = ".avatardiv.avatardiv-shown")
-    public WebElement profileicon;
+    public WebElement avatar;
 
     @FindBy(xpath = "//*[@id='expanddiv']/ul/li[2]/a")
     public WebElement Settings;

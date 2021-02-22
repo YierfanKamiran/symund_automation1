@@ -1,6 +1,7 @@
 package com.symund.step_definitions;
 
 import com.symund.pages.DashboardPage;
+import com.symund.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,8 +9,12 @@ public class profileSettingStepDefs {
 
     @Given("the user navigates {string} , {string}")
     public void the_user_navigates_to(String tab, String module) {
-            new DashboardPage().navigateToModule(tab,module);
+        new DashboardPage().navigateToModule(tab,module);
+
+        BrowserUtils.waitFor(3);
         }
+
+
 
     @When("the user enters information below")
     public void the_user_enters_information_below(io.cucumber.datatable.DataTable dataTable) {
