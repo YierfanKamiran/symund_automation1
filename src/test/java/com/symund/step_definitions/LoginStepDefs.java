@@ -47,6 +47,4 @@ public class LoginStepDefs {
         String currentUrl = Driver.get().getCurrentUrl();
         Assert.assertNotEquals(expectedUrl,currentUrl);
     }
-
-
 }

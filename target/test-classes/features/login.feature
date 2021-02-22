@@ -1,4 +1,4 @@
-@wip
+
 Feature: the user should be able to login
 
   Background:
@@ -6,12 +6,9 @@ Feature: the user should be able to login
 
     @SYM-143 @positive
    Scenario: Successful Login with valid credentials
-     When the user enters "Employee199" and "Employee123"
+     When the user enters "Employee100" and "Employee123"
      Then the title should contain "Files - Symund - QA"
 
-#  Scenario: Successful Login with valid credentials
-#    When the user enters "username" and "password"
-#    Then the title should contain "Files - Symund - QA"
 
    @SYM-144 @negative
   Scenario Outline: Unsuccessful login with invalid credentials
@@ -27,8 +24,14 @@ Feature: the user should be able to login
       | Employee199 |             |
       |             |             |
 
-
+@login
 Scenario: the user should be able to login successfully
  Given the user is logged in as "Employee120"
   Then the title should contain "Files - Symund - QA"
 
+  @wip
+Scenario:
+Given the user is logged in as "Employee100"
+  When the user clicks to "Settings menu"
+  And clicks to "Settings"
+  Then the url should change to "url"
