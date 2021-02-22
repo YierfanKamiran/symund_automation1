@@ -4,11 +4,10 @@ Feature:
 
   Scenario: user should be able to change  profile settings
 
-    Given the user is on the login page
-    When the user enters "Employee100" and "Employee123"
+    Given the user is logged in as "Employee100"
     And the user navigates avatar
     And the user clicks Setting button
-    And the title should contain "Settings - Symund - QA"
+    And the user is in the profile setting page
     When the user enters information below
 
     | Full name    | Mike Smith            |

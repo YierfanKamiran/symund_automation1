@@ -3,9 +3,12 @@ package com.symund.step_definitions;
 import com.symund.pages.DashboardPage;
 import com.symund.pages.ProfilesettingPage;
 import com.symund.utilities.BrowserUtils;
+import com.symund.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+
 public class ProfilesettingStepDefs {
 
 
@@ -22,6 +25,14 @@ public class ProfilesettingStepDefs {
         BrowserUtils.waitFor(2);
 
     }
+
+    @Given("the user is in the profile setting page")
+    public void the_user_is_in_the_profile_setting_page() {
+        System.out.println("the user is in the setting page");
+
+    }
+
+
         @When("the user enters information below")
         public void the_user_enters_information_below (io.cucumber.datatable.DataTable dataTable){
             // Write code here that turns the phrase above into concrete actions
