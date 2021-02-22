@@ -4,7 +4,8 @@ Feature:
 
   Scenario: user should be able to change  profile settings
     Given the user is logged in as "Employee1"
-    And the user navigates "Avatar" , "Settings"
+    And the user navigates avatar
+    And the user clicks Setting button
     When the user enters information below
 
     | Full name    | Mike Smith            |

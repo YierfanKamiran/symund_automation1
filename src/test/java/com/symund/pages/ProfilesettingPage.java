@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
-public class profileSettingPage extends BasePage {
-    public profileSettingPage() {
+public class ProfilesettingPage extends BasePage {
+    public ProfilesettingPage() {
 
         PageFactory.initElements(Driver.get(), this); }
 

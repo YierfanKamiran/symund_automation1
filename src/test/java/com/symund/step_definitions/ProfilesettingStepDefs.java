@@ -1,21 +1,26 @@
 package com.symund.step_definitions;
 
 import com.symund.pages.DashboardPage;
+import com.symund.pages.ProfilesettingPage;
 import com.symund.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-public class profileSettingStepDefs {
+public class ProfilesettingStepDefs {
 
-    @Given("the user navigates {string} , {string}")
-    public void the_user_navigates_to(String tab, String module) {
-        new DashboardPage().navigateToModule(tab,module);
+    ProfilesettingPage profilesettingPage = new ProfilesettingPage();
 
+    @Given("the user navigates avatar")
+    public void the_user_navigates_avatar() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
 
-        BrowserUtils.waitFor(3);
-        }
-
-
+    @Given("the user clicks Setting button")
+    public void the_user_clicks_Setting_button() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
 
     @When("the user enters information below")
     public void the_user_enters_information_below(io.cucumber.datatable.DataTable dataTable) {
@@ -34,4 +39,7 @@ public class profileSettingStepDefs {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
+
+
 }
