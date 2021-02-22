@@ -1,2 +1,1 @@
-file:src/test/resources/features/login.feature:8:20:21:22:23:24:25:28
 file:src/test/resources/features/Logout.feature:4
