@@ -1,4 +1,4 @@
 package com.symund.pages;
 
-public abstract class BasePage {
+public class BasePage {
 }

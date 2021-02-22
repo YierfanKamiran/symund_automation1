@@ -1,15 +1,15 @@
 package com.symund.step_definitions;
 
+import com.symund.pages.DashboardPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 public class profileSettingStepDefs {
 
     @Given("the user navigates {string} , {string}")
-    public void the_user_navigates(String string, String string2) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
+    public void the_user_navigates_to(String tab, String module) {
+            new DashboardPage().navigateToModule(tab,module);
+        }
 
     @When("the user enters information below")
     public void the_user_enters_information_below(io.cucumber.datatable.DataTable dataTable) {
