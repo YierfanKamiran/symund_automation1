@@ -28,7 +28,7 @@ public class LoginStepDefs {
 
     @Then("the title should contain {string}")
     public void the_title_should_contain(String expectedTitle) {
-        expectedTitle="Files - Symund - QA";
+
         String actualTitle= Driver.get().getTitle();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
     }
@@ -43,7 +43,7 @@ public class LoginStepDefs {
 
     @Then("the url should change to {string}")
     public void the_url_should_change_to(String expectedUrl) {
-        expectedUrl="https://qa.symund.com/index.php/apps/files/?dir=/&fileid=2314";
+
         String currentUrl = Driver.get().getCurrentUrl();
         Assert.assertNotEquals(expectedUrl,currentUrl);
     }
