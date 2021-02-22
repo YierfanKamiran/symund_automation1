@@ -1,10 +1,10 @@
-@wip
+
 Feature: the user should be able to login
 
   Background:
     Given the user is on the login page
 
-    @SYM-143 @positive
+ @positive
    Scenario: Successful Login with valid credentials
      When the user enters "Employee100" and "Employee123"
      Then the title should contain "Files - Symund - QA"
