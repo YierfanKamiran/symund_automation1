@@ -17,7 +17,6 @@ public class Logout_Step_Definition {
     public void user_is_on_the_login_page_and_page_title_is_Symund_QA() {
         Driver.get().get("https://qa.symund.com");
     }
-
     @When("User login to symund website successfully")
     public void user_login_to_symund_website_successfully() {
         logoutPage.username.sendKeys(ConfigurationReader.get("username1"));
