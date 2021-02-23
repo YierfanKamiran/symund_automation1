@@ -13,7 +13,7 @@ Feature: the user should be able to login
    @SYM-144 @negative
   Scenario Outline: Unsuccessful login with invalid credentials
     When the user enters "<username>" and "<password>"
-    Then the url should change to "url"
+    Then the url should change to "https://qa.symund.com/index.php/apps/files/?dir=/&fileid=2314"
 
     Examples:
       | username    | password    |
