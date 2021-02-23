@@ -46,6 +46,12 @@ formatter.scenario({
       "name": "@status"
     },
     {
+      "name": "@SYM-149"
+    },
+    {
+      "name": "@SYM-150"
+    },
+    {
       "name": "@wip"
     },
     {
@@ -181,6 +187,9 @@ formatter.scenario({
       "name": "@status"
     },
     {
+      "name": "@SYM-151"
+    },
+    {
       "name": "@delete_status"
     }
   ]
@@ -283,6 +292,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@status"
+    },
+    {
+      "name": "@SYM-148"
     },
     {
       "name": "@generic_status"
