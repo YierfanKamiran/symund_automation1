@@ -1,34 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2308000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-22T20:30:23.137Z",
+        "start_timestamp": "2021-02-23T00:52:03.883Z",
         "before": [
           {
             "result": {
-              "duration": 5788788000,
+              "duration": 9466605000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +15,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "Successful Login with valid credentials",
+        "line": 4,
+        "name": "",
         "description": "",
-        "id": "the-user-should-be-able-to-login;successful-login-with-valid-credentials",
+        "id": "verify-that-user-logs-out-symund-successfully;",
         "after": [
           {
             "result": {
-              "duration": 163556000,
+              "duration": 118274000,
               "status": "passed"
             },
             "match": {
@@ -56,57 +35,77 @@
         "steps": [
           {
             "result": {
-              "duration": 7138494000,
+              "duration": 1375233000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "the user enters \"Employee100\" and \"Employee123\"",
+            "line": 5,
+            "name": "User is on the login page and page title is \u003cSymund - QA\u003e",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Employee100\"",
-                  "offset": 16
-                },
-                {
-                  "val": "\"Employee123\"",
-                  "offset": 34
-                }
-              ],
-              "location": "com.symund.step_definitions.LoginStepDefs.the_user_enters_and(java.lang.String,java.lang.String)"
+              "location": "com.symund.step_definitions.Logout_Step_Definition.user_is_on_the_login_page_and_page_title_is_Symund_QA()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6625288000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User login to symund website successfully",
+            "match": {
+              "location": "com.symund.step_definitions.Logout_Step_Definition.user_login_to_symund_website_successfully()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 36689000,
+              "duration": 99062000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "the title should contain \"Files - Symund - QA\"",
+            "line": 7,
+            "name": "User Able to click on Logout avatar",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Files - Symund - QA\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+              "location": "com.symund.step_definitions.Logout_Step_Definition.user_Able_to_click_on_Logout_avatar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2470636000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Able to click on Logout button",
+            "match": {
+              "location": "com.symund.step_definitions.Logout_Step_Definition.user_Able_to_click_on_Logout_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9949000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify that page title is \u003cSymund - QA\u003e",
+            "match": {
+              "location": "com.symund.step_definitions.Logout_Step_Definition.verify_that_page_title_is_Symund_QA()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@positive"
+            "name": "@logout"
           }
         ]
       }
     ],
-    "name": "the user should be able to login",
+    "name": "Verify that user logs out Symund Successfully",
     "description": "",
-    "id": "the-user-should-be-able-to-login",
+    "id": "verify-that-user-logs-out-symund-successfully",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/Logout.feature",
     "tags": []
   }
 ]
