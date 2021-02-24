@@ -18,7 +18,7 @@ Background:
     | Website      | https:MikeSmith.com   |
     | Twitter      | mike@Twitter          |
     | Locale       | en                    |
-    | Language     | en                    |
+    | Language     | es                    |
 
     And the user see clicks upload photo button and uploads image
     Then all the changes should be saved

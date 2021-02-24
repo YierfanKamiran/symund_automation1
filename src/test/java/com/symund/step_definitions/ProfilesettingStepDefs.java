@@ -39,19 +39,15 @@ public class ProfilesettingStepDefs {
 
         profilesettingPage.Fullname.sendKeys(userinfo.get("Full name"));
         profilesettingPage.Email.sendKeys(userinfo.get("Email"));
-        profilesettingPage.getDropDownElement(profilesettingPage.Language, userinfo.get("Language"));
+
         profilesettingPage.PhoneNumber.sendKeys(userinfo.get("Phone number"));
         profilesettingPage.Address.sendKeys(userinfo.get("Address"));
-        profilesettingPage.getDropDownElement(profilesettingPage.Locale, userinfo.get("Locale"));
         profilesettingPage.Website.sendKeys(userinfo.get("Website"));
         profilesettingPage.Twitter.sendKeys(userinfo.get("Twitter"));
-        BrowserUtils.waitFor(5);
-
-
-
-
-
-
+        profilesettingPage.getDropDownElement(profilesettingPage.Language, userinfo.get("Language"));
+        BrowserUtils.waitFor(2);
+        profilesettingPage.getDropDownElement(profilesettingPage.Locale, userinfo.get("Locale"));
+        BrowserUtils.waitFor(2);
 
 
     }
@@ -64,10 +60,14 @@ public class ProfilesettingStepDefs {
 
     @Then("all the changes should be saved")
     public void all_the_changes_should_be_saved() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
+ profilesettingPage.companyLogo.click();
+ BrowserUtils.waitFor(2);
+ profilesettingPage.avatar.click();
+ BrowserUtils.waitFor(2);
+ profilesettingPage.Settings.click();
 
+
+    }
     @Then("{string} message should  be displayed")
     public void message_should_be_displayed(String string) {
         // Write code here that turns the phrase above into concrete actions

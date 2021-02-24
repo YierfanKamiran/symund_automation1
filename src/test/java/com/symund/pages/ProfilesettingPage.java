@@ -33,7 +33,7 @@ public class ProfilesettingPage extends BasePage {
     @FindBy(id = "email")
     public WebElement Email;
 
-    @FindBy(id = "phone")
+    @FindBy(id="phone")
     public WebElement PhoneNumber;
 
     @FindBy(id = "address")
@@ -56,6 +56,7 @@ public class ProfilesettingPage extends BasePage {
 
     @FindBy(css = "#localeinput>option")
     public List<WebElement> localeoption;
+
 
 
     public void getDropDownElement(WebElement dropDown,String value){
