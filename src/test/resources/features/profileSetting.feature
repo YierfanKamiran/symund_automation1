@@ -1,13 +1,13 @@
 
 @profile
 Feature:
+Background:  Given the user is logged in as "Employee100"
+  And the user navigates avatar
+  And the user clicks Setting button
+  And the title should contain "Settings - Symund - QA"
+
 
   Scenario: user should be able to change  profile settings
-
-    Given the user is logged in as "Employee100"
-    And the user navigates avatar
-    And the user clicks Setting button
-    And the title should contain "Settings - Symund - QA"
     When the user enters information below
 
     | Full name    | Mike Smith            |
@@ -16,10 +16,29 @@ Feature:
     | Address      | 46 russel square wc126|
     | Website      | https:MikeSmith.com   |
     | Twitter      | mike@Twitter          |
-    | Locale       | English               |
-    | Language     | English               |
+    | Locale       | en                    |
+    | Language     | en                    |
 
     Then the user see the newly entered changes
+
+
+    Scenario: Negative settings information
+
+      When the user enters information below
+
+        | Full name    | "£$%^                 |
+        | Email        | "£$%^&@cybertek.com   |
+        | Phone number | !!!"""56789           |
+        | Address      | 46 russel square wc126|
+        | Website      | https:MikeSmith.com.   |
+        | Twitter      | mike@Twitter..          |
+        | Locale       | en                    |
+        | Language     | en                    |
+
+
+
+
+
 
 
 
