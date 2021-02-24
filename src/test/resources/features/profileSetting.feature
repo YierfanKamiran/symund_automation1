@@ -1,7 +1,8 @@
 
 @profile
 Feature:
-Background:  Given the user is logged in as "Employee100"
+Background:
+  Given the user is logged in as "Employee100"
   And the user navigates avatar
   And the user clicks Setting button
   And the title should contain "Settings - Symund - QA"
