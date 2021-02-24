@@ -26,7 +26,7 @@ Background:
 
 
 
-
+@negativepro
     Scenario: Negative settings information
 
       When the user enters information below
@@ -41,21 +41,8 @@ Background:
         | Language     | en22                    |
 
 
-
-
-
-    When the user enters information below
-
-      | Full name    | !@£$%%               |
-      | Email        | Mikesmithcybertekcom |
-      | Phone number | 0759                 |
-      | Address      | %^*&& FTYUi          |
-      | Website      | https:MikeSmith      |
-      | Twitter      | Twitter asf          |
-      | Locale       | en                   |
-      | Language     | en_001               |
-    And the user see clicks upload photo button and uploads image
-    Then "Invalid info" message should  be displayed
+      And the user see clicks upload photo button and uploads image
+      Then "Invalid info" message should  be displayed
 
 
 
