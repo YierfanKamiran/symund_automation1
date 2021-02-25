@@ -17,8 +17,7 @@ public class ProfilesettingStepDefs {
 
     @Given("the user navigates avatar")
     public void the_user_navigates_avatar() {
-
-        new ProfilesettingPage().avatar.click();
+        profilesettingPage.avatar.click();
         BrowserUtils.waitFor(2);
 
     }
@@ -26,7 +25,7 @@ public class ProfilesettingStepDefs {
 
     @Given("the user clicks Setting button")
     public void the_user_clicks_Setting_button() {
-        new ProfilesettingPage().Settings.click();
+        profilesettingPage.Settings.click();
         BrowserUtils.waitFor(2);
 
     }

@@ -45,7 +45,7 @@ public class ProfilesettingPage extends BasePage {
     @FindBy(id = "twitter")
     public WebElement Twitter;
 
-    @FindBy(xpath="//*[@id=languageinput]")
+    @FindBy(id="languageinput")
             public WebElement Language;
 
     @FindBy(id="localeinput")
