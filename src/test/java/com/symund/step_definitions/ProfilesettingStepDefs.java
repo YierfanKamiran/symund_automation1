@@ -53,7 +53,7 @@ public class ProfilesettingStepDefs {
 
     @When("the user see clicks upload photo button and uploads image")
     public void the_user_see_clicks_upload_photo_button_and_uploads_image() {
-        profilesettingPage.uploadbutton.sendKeys("C:\\Users\\evrim\\OneDrive\\Pictures\\Camera Roll");
+        profilesettingPage.uploadbutton.sendKeys("C:\\Users\\evrim\\OneDrive\\Desktop");
         BrowserUtils.waitFor(2);
 
     }
