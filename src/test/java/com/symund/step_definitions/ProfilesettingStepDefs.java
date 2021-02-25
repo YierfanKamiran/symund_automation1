@@ -53,10 +53,10 @@ public class ProfilesettingStepDefs {
 
     @When("the user see clicks upload photo button and uploads image")
     public void the_user_see_clicks_upload_photo_button_and_uploads_image() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
+        profilesettingPage.uploadbutton.sendKeys("C:\\Users\\evrim\\OneDrive\\Pictures\\Camera Roll");
+        BrowserUtils.waitFor(2);
 
+    }
     @Then("all the changes should be saved")
     public void all_the_changes_should_be_saved() {
  profilesettingPage.companyLogo.click();
