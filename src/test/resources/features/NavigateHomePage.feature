@@ -1,3 +1,4 @@
+@SYM-155
 Feature: Navigate to home page
 
   Background:
