@@ -1,3 +1,4 @@
+@SYM-155
 Feature: Navigate to home page
 
   Background:
@@ -13,7 +14,7 @@ Feature: Navigate to home page
       | TopMenu  |
       | Photos   |
       | Activity |
-      | Talkxx   |
+      | Talk     |
       | Contacts |
       | Calendar |
       | Notes    |
