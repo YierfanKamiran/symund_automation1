@@ -206,11 +206,9 @@ formatter.step({
   "name": "\"Invalid info\" message should  be displayed",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "com.symund.step_definitions.ProfilesettingStepDefs.message_should_be_displayed(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({

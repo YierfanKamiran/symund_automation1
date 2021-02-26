@@ -54,7 +54,7 @@ public class ProfilesettingStepDefs {
     @When("the user see clicks upload photo button and uploads image")
     public void the_user_see_clicks_upload_photo_button_and_uploads_image() {
         profilesettingPage.uploadbutton.sendKeys("C:\\Users\\evrim\\OneDrive\\Desktop");
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(5);
 
     }
     @Then("all the changes should be saved")
@@ -67,10 +67,7 @@ public class ProfilesettingStepDefs {
 
 
     }
-    @Then("{string} message should  be displayed")
-    public void message_should_be_displayed(String string) {
 
-    }
 }
 
 
