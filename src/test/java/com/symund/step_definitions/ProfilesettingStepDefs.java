@@ -69,8 +69,7 @@ public class ProfilesettingStepDefs {
     }
     @Then("{string} message should  be displayed")
     public void message_should_be_displayed(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
 }
 
