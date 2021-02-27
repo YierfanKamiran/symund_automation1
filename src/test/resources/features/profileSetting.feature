@@ -1,7 +1,7 @@
 
-
+@SYM-162 @profile
 Feature:
-  @SYM-152 @profile
+
 Background:
   Given the user is logged in as "Employee100"
   And the user navigates avatar
@@ -43,7 +43,7 @@ Background:
 
 
       And the user  clicks upload photo button and uploads another image
-
+      Then "invalid info" message should be displayed
 
 
 

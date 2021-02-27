@@ -1,6 +1,7 @@
 
-@profile
+@SYM-162 @profile
 Feature:
+
 Background:
   Given the user is logged in as "Employee100"
   And the user navigates avatar
@@ -13,7 +14,7 @@ Background:
 
     | Full name    | Mike Smith            |
     | Email        | Mikesmith@cybertek.com|
-    | Phone number | 0759454453!!!!        |
+    | Phone number | 0759454453            |
     | Address      | 46 russel square wc126|
     | Website      | https:MikeSmith.com   |
     | Twitter      | mike@Twitter          |
@@ -42,6 +43,7 @@ Background:
 
 
       And the user  clicks upload photo button and uploads another image
+      Then "invalid info" message should be displayed
 
 
 

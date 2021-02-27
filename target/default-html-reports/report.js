@@ -5,6 +5,9 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
+      "name": "@SYM-162"
+    },
+    {
       "name": "@profile"
     }
   ]
@@ -62,6 +65,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@SYM-162"
+    },
     {
       "name": "@profile"
     }
@@ -163,6 +169,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@SYM-162"
+    },
     {
       "name": "@profile"
     },

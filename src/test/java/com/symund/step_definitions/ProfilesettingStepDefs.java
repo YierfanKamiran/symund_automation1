@@ -8,6 +8,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import java.util.Map;
@@ -57,34 +59,35 @@ public class ProfilesettingStepDefs {
     public void the_user_see_clicks_upload_photo_button_and_uploads_image() {
 
 
-
         BrowserUtils.waitFor(5);
-        String myprojectPath=(System.getProperty("user.dir"));
-        String filePath="src/test/resources/FB_IMG_1593499125485.jpg";
-        String fullPath=myprojectPath+"/"+filePath;
+        String myprojectPath = (System.getProperty("user.dir"));
+        String filePath = "src/test/resources/FB_IMG_1593499125485.jpg";
+        String fullPath = myprojectPath + "/" + filePath;
         profilesettingPage.uploadFromLocal.sendKeys(fullPath);
         BrowserUtils.waitFor(6);
         profilesettingPage.submitPhotoButton.click();
 
 
     }
+
     @Then("all the changes should be saved")
     public void all_the_changes_should_be_saved() {
- profilesettingPage.companyLogo.click();
- BrowserUtils.waitFor(2);
- profilesettingPage.avatar.click();
- BrowserUtils.waitFor(2);
- profilesettingPage.Settings.click();
+        profilesettingPage.companyLogo.click();
+        BrowserUtils.waitFor(2);
+        profilesettingPage.avatar.click();
+        BrowserUtils.waitFor(2);
+        profilesettingPage.Settings.click();
 
 
     }
+
     @When("the user  clicks upload photo button and uploads another image")
     public void the_user_clicks_upload_photo_button_and_uploads_another_image() {
 
         BrowserUtils.waitFor(6);
-        String myprojectPath=(System.getProperty("user.dir"));
-        String filePath="src/test/resources/FB_IMG_1593497524603.jpg";
-        String fullPath=myprojectPath+"/"+filePath;
+        String myprojectPath = (System.getProperty("user.dir"));
+        String filePath = "src/test/resources/FB_IMG_1593497524603.jpg";
+        String fullPath = myprojectPath + "/" + filePath;
         profilesettingPage.uploadFromLocal.sendKeys(fullPath);
         BrowserUtils.waitFor(6);
         profilesettingPage.submitPhotoButton.click();
@@ -93,7 +96,21 @@ public class ProfilesettingStepDefs {
     }
 
 
+
+
+
+    @Then("{string} message should be displayed")
+    public void message_should_be_displayed(String locator,String expectedMessage) {
+        JavascriptExecutor js = (JavascriptExecutor) Driver.get();
+        WebElement field = Driver.get().findElement(By.cssSelector("#"+locator));
+        Boolean is_valid = (Boolean)js.executeScript("return arguments[0].checkValidity();", field);
+        String actualMessage= (String)js.executeScript("return arguments[0].validationMessage;", field);
+        Assert.assertEquals(expectedMessage,actualMessage);
     }
+}
+
+
+
 
 
 
