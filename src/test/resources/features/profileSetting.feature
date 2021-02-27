@@ -1,6 +1,7 @@
 
-@profile
+
 Feature:
+  @SYM-152 @profile
 Background:
   Given the user is logged in as "Employee100"
   And the user navigates avatar
