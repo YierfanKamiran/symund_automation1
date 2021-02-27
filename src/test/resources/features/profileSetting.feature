@@ -37,8 +37,8 @@ Background:
         | Address      | ()46 russel square wc126|
         | Website      | //https:MikeSmith.com.  |
         | Twitter      | mike@Twitter..          |
-        | Locale       | ent                     |
-        | Language     | en22                    |
+        | Locale       | en                     |
+        | Language     | en                   |
 
 
       And the user see clicks upload photo button and uploads image
