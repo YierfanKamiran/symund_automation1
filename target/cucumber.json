@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-27T07:55:43.323Z",
+        "start_timestamp": "2021-02-27T18:50:40.483Z",
         "before": [
           {
             "result": {
-              "duration": 7441365700,
+              "duration": 8581364400,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
+        "line": 5,
         "name": "Upload Files",
         "description": "",
-        "id": "the-user-should-be-able-to-upload-and-create-files;upload-files",
+        "id": "the-user-should-be-able-to-upload;upload-files",
         "after": [
           {
             "result": {
-              "duration": 1048565300,
+              "duration": 822349800,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 997100,
+              "duration": 1998900,
               "status": "passed"
             },
-            "line": 4,
+            "line": 6,
             "name": "the user is on the login page",
             "match": {
               "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 7074518400,
+              "duration": 11370485900,
               "status": "passed"
             },
-            "line": 5,
+            "line": 7,
             "name": "the user enters \"Employee23\" and \"Employee123\"",
             "match": {
               "arguments": [
@@ -69,10 +69,10 @@
           },
           {
             "result": {
-              "duration": 3461611700,
+              "duration": 3412684600,
               "status": "passed"
             },
-            "line": 6,
+            "line": 8,
             "name": "the user clicks Upload file and choose the file to upload",
             "match": {
               "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_clicks_Upload_file_and_choose_the_file_to_upload()"
@@ -81,10 +81,10 @@
           },
           {
             "result": {
-              "duration": 3097004500,
+              "duration": 3073734500,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
             "name": "the user should be able to see the uploaded files",
             "match": {
               "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_should_be_able_to_see_the_uploaded_files()"
@@ -95,15 +95,18 @@
         "tags": [
           {
             "name": "@Upload"
+          },
+          {
+            "name": "@SYM-159"
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-27T07:56:05.566Z",
+        "start_timestamp": "2021-02-27T18:51:07.893Z",
         "before": [
           {
             "result": {
-              "duration": 6532488400,
+              "duration": 6451002100,
               "status": "passed"
             },
             "match": {
@@ -111,14 +114,14 @@
             }
           }
         ],
-        "line": 9,
+        "line": 11,
         "name": "Create new folder and text documents",
         "description": "",
-        "id": "the-user-should-be-able-to-upload-and-create-files;create-new-folder-and-text-documents",
+        "id": "the-user-should-be-able-to-upload;create-new-folder-and-text-documents",
         "after": [
           {
             "result": {
-              "duration": 807610600,
+              "duration": 898370300,
               "status": "passed"
             },
             "match": {
@@ -131,9 +134,10 @@
         "steps": [
           {
             "result": {
+              "duration": 999900,
               "status": "passed"
             },
-            "line": 10,
+            "line": 12,
             "name": "the user is on the login page",
             "match": {
               "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
@@ -142,10 +146,10 @@
           },
           {
             "result": {
-              "duration": 6833280600,
+              "duration": 8170442500,
               "status": "passed"
             },
-            "line": 11,
+            "line": 13,
             "name": "the user enters \"Employee23\" and \"Employee123\"",
             "match": {
               "arguments": [
@@ -164,10 +168,10 @@
           },
           {
             "result": {
-              "duration": 3612120500,
+              "duration": 3481336900,
               "status": "passed"
             },
-            "line": 12,
+            "line": 14,
             "name": "the user clicks new folder",
             "match": {
               "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_clicks_new_folder()"
@@ -176,10 +180,10 @@
           },
           {
             "result": {
-              "duration": 3336551200,
+              "duration": 3364582200,
               "status": "passed"
             },
-            "line": 13,
+            "line": 15,
             "name": "the user clicks New text document",
             "match": {
               "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_clicks_New_text_document()"
@@ -190,13 +194,16 @@
         "tags": [
           {
             "name": "@Upload"
+          },
+          {
+            "name": "@SYM-161"
           }
         ]
       }
     ],
-    "name": "the user should be able to upload and create files",
+    "name": "the user should be able to upload",
     "description": "",
-    "id": "the-user-should-be-able-to-upload-and-create-files",
+    "id": "the-user-should-be-able-to-upload",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/UpLoadAndCreateFiles.feature",
     "tags": [

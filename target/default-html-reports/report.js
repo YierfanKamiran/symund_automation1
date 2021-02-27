@@ -1,6 +1,6 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/UpLoadAndCreateFiles.feature");
 formatter.feature({
-  "name": "the user should be able to upload and create files",
+  "name": "the user should be able to upload",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -16,6 +16,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@Upload"
+    },
+    {
+      "name": "@SYM-159"
     }
   ]
 });
@@ -72,6 +75,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@Upload"
+    },
+    {
+      "name": "@SYM-161"
     }
   ]
 });
