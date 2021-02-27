@@ -57,9 +57,11 @@ public class ProfilesettingPage extends BasePage {
     @FindBy(css = "#localeinput>option")
     public List<WebElement> localeoption;
 
-    @FindBy(xpath="//*[@id='uploadavatar']")
-    public WebElement uploadbutton;
+    @FindBy(css = "input#uploadavatar")
+    public WebElement uploadFromLocal;
 
+    @FindBy(id = "sendcropperbutton")
+    public WebElement submitPhotoButton;
 
 
     public void getDropDownElement(WebElement dropDown,String value){

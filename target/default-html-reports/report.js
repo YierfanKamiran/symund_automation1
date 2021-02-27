@@ -189,8 +189,7 @@ formatter.match({
   "location": "com.symund.step_definitions.ProfilesettingStepDefs.the_user_enters_information_below(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate option with value: en22\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-O04DSU77\u0027, ip: \u0027192.168.0.100\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.2\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)\r\n\tat org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)\r\n\tat com.symund.pages.ProfilesettingPage.getDropDownElement(ProfilesettingPage.java:68)\r\n\tat com.symund.step_definitions.ProfilesettingStepDefs.the_user_enters_information_below(ProfilesettingStepDefs.java:46)\r\n\tat ✽.the user enters information below(file:///C:/Users/evrim/IdeaProjects/symund_automation1/src/test/resources/features/profileSetting.feature:32)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user see clicks upload photo button and uploads image",
@@ -200,17 +199,18 @@ formatter.match({
   "location": "com.symund.step_definitions.ProfilesettingStepDefs.the_user_see_clicks_upload_photo_button_and_uploads_image()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "\"Invalid info\" message should  be displayed",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "com.symund.step_definitions.ProfilesettingStepDefs.message_should_be_displayed(java.lang.String)"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });

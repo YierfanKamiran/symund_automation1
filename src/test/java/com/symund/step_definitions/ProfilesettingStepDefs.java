@@ -8,12 +8,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 
 import java.util.Map;
 
 public class ProfilesettingStepDefs {
 
     ProfilesettingPage profilesettingPage = new ProfilesettingPage();
+
 
     @Given("the user navigates avatar")
     public void the_user_navigates_avatar() {
@@ -46,15 +48,33 @@ public class ProfilesettingStepDefs {
         profilesettingPage.getDropDownElement(profilesettingPage.Language, userinfo.get("Language"));
         BrowserUtils.waitFor(2);
         profilesettingPage.getDropDownElement(profilesettingPage.Locale, userinfo.get("Locale"));
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(3);
 
 
     }
 
     @When("the user see clicks upload photo button and uploads image")
     public void the_user_see_clicks_upload_photo_button_and_uploads_image() {
-        profilesettingPage.uploadbutton.sendKeys("C:\\Users\\evrim\\OneDrive\\Desktop");
+
+
+
         BrowserUtils.waitFor(5);
+        String myprojectPath=(System.getProperty("user.dir"));
+        String filePath="src/test/resources/FB_IMG_1593499125485.jpg";
+        String fullPath=myprojectPath+"/"+filePath;
+        profilesettingPage.uploadFromLocal.sendKeys(fullPath);
+        BrowserUtils.waitFor(6);
+        profilesettingPage.submitPhotoButton.click();
+
+
+
+
+
+
+
+
+
+
 
     }
     @Then("all the changes should be saved")
@@ -65,6 +85,11 @@ public class ProfilesettingStepDefs {
  BrowserUtils.waitFor(2);
  profilesettingPage.Settings.click();
 
+
+    }
+
+    @Then("{string} message should  be displayed")
+    public void message_should_be_displayed(String string) {
 
     }
 
