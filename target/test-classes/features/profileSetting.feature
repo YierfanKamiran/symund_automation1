@@ -13,7 +13,7 @@ Background:
 
     | Full name    | Mike Smith            |
     | Email        | Mikesmith@cybertek.com|
-    | Phone number | 0759454453            |
+    | Phone number | 0759454453!!!!        |
     | Address      | 46 russel square wc126|
     | Website      | https:MikeSmith.com   |
     | Twitter      | mike@Twitter          |
@@ -37,12 +37,12 @@ Background:
         | Address      | ()46 russel square wc126|
         | Website      | //https:MikeSmith.com.  |
         | Twitter      | mike@Twitter..          |
-        | Locale       | en                     |
-        | Language     | en                   |
+        | Locale       | en                      |
+        | Language     | en                      |
 
 
-      And the user see clicks upload photo button and uploads image
-      Then "Invalid info" message should  be displayed
+      And the user  clicks upload photo button and uploads another image
+
 
 
 

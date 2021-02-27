@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10048365900,
+              "duration": 8136634600,
               "status": "passed"
             },
             "line": 5,
@@ -29,7 +29,7 @@
           },
           {
             "result": {
-              "duration": 2162809600,
+              "duration": 2109099900,
               "status": "passed"
             },
             "line": 6,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 3963869700,
+              "duration": 5133853000,
               "status": "passed"
             },
             "line": 7,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 14973100,
+              "duration": 18683200,
               "status": "passed"
             },
             "line": 8,
@@ -72,11 +72,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-02-27T16:16:57.943Z",
+        "start_timestamp": "2021-02-27T17:45:59.352Z",
         "before": [
           {
             "result": {
-              "duration": 6482316600,
+              "duration": 6451125200,
               "status": "passed"
             },
             "match": {
@@ -91,7 +91,7 @@
         "after": [
           {
             "result": {
-              "duration": 780743700,
+              "duration": 741855200,
               "status": "passed"
             },
             "match": {
@@ -104,7 +104,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8090390800,
+              "duration": 8102922700,
               "status": "passed"
             },
             "line": 12,
@@ -128,7 +128,7 @@
               {
                 "cells": [
                   "Phone number",
-                  "0759454453"
+                  "0759454453!!!!"
                 ]
               },
               {
@@ -166,7 +166,7 @@
           },
           {
             "result": {
-              "duration": 10163236700,
+              "duration": 11163608300,
               "status": "passed"
             },
             "line": 23,
@@ -178,7 +178,7 @@
           },
           {
             "result": {
-              "duration": 8133745300,
+              "duration": 9870342600,
               "status": "passed"
             },
             "line": 24,
@@ -204,7 +204,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16363507300,
+              "duration": 9840962700,
               "status": "passed"
             },
             "line": 5,
@@ -222,7 +222,7 @@
           },
           {
             "result": {
-              "duration": 2161875700,
+              "duration": 2109761200,
               "status": "passed"
             },
             "line": 6,
@@ -234,7 +234,7 @@
           },
           {
             "result": {
-              "duration": 4149117900,
+              "duration": 4288380700,
               "status": "passed"
             },
             "line": 7,
@@ -246,7 +246,7 @@
           },
           {
             "result": {
-              "duration": 13646800,
+              "duration": 12958300,
               "status": "passed"
             },
             "line": 8,
@@ -265,11 +265,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-02-27T16:17:47.870Z",
+        "start_timestamp": "2021-02-27T17:46:51.169Z",
         "before": [
           {
             "result": {
-              "duration": 6183303900,
+              "duration": 4856178500,
               "status": "passed"
             },
             "match": {
@@ -284,7 +284,7 @@
         "after": [
           {
             "result": {
-              "duration": 782141600,
+              "duration": 728560100,
               "status": "passed"
             },
             "match": {
@@ -297,7 +297,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8068619500,
+              "duration": 8104589100,
               "status": "passed"
             },
             "line": 32,
@@ -359,32 +359,15 @@
           },
           {
             "result": {
-              "duration": 10168740400,
+              "duration": 12169851400,
               "status": "passed"
             },
             "line": 44,
-            "name": "the user see clicks upload photo button and uploads image",
+            "name": "the user  clicks upload photo button and uploads another image",
             "match": {
-              "location": "com.symund.step_definitions.ProfilesettingStepDefs.the_user_see_clicks_upload_photo_button_and_uploads_image()"
+              "location": "com.symund.step_definitions.ProfilesettingStepDefs.the_user_clicks_upload_photo_button_and_uploads_another_image()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "\"Invalid info\" message should  be displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Invalid info\"",
-                  "offset": 0
-                }
-              ],
-              "location": "com.symund.step_definitions.ProfilesettingStepDefs.message_should_be_displayed(java.lang.String)"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [

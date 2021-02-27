@@ -192,21 +192,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user see clicks upload photo button and uploads image",
+  "name": "the user  clicks upload photo button and uploads another image",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.ProfilesettingStepDefs.the_user_see_clicks_upload_photo_button_and_uploads_image()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "\"Invalid info\" message should  be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.symund.step_definitions.ProfilesettingStepDefs.message_should_be_displayed(java.lang.String)"
+  "location": "com.symund.step_definitions.ProfilesettingStepDefs.the_user_clicks_upload_photo_button_and_uploads_another_image()"
 });
 formatter.result({
   "status": "passed"
