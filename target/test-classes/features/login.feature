@@ -29,9 +29,3 @@ Scenario: the user should be able to login successfully
  Given the user is logged in as "Employee120"
   Then the title should contain "Files - Symund - QA"
 
-  @wip
-Scenario:
-Given the user is logged in as "Employee100"
-  When the user clicks to "Settings menu"
-  And clicks to "Settings"
-  Then the url should change to "url"

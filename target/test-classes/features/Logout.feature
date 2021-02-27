@@ -1,5 +1,4 @@
 Feature: Verify that user logs out Symund Successfully
-  @wip
 
   Scenario:
     Given User is on the login page and page title is <Symund - QA>
