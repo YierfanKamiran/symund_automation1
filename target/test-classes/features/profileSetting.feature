@@ -27,7 +27,7 @@ Background:
 
 
 
-@negativepro
+@SYM-163
     Scenario: Negative settings information
 
       When the user enters information below
