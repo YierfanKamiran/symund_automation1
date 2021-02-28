@@ -1,66 +1,145 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/UpLoadAndCreateFiles.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/NavigateHomePage.feature");
 formatter.feature({
-  "name": "the user should be able to upload",
+  "name": "Navigate to home page",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@Upload"
+      "name": "@SYM-155"
     }
   ]
 });
-formatter.scenario({
-  "name": "Upload Files",
+formatter.scenarioOutline({
+  "name": "Navigate to home page",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Upload"
-    },
-    {
-      "name": "@SYM-159"
+      "name": "@navigation"
     }
   ]
+});
+formatter.step({
+  "name": "the user clicks \"\u003cTopMenu\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "the user clicks to Symund logo",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "the title should contain \"Files - Symund - QA\"",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "TopMenu"
+      ]
+    },
+    {
+      "cells": [
+        "Photos"
+      ]
+    },
+    {
+      "cells": [
+        "Activity"
+      ]
+    },
+    {
+      "cells": [
+        "Talk"
+      ]
+    },
+    {
+      "cells": [
+        "Contacts"
+      ]
+    },
+    {
+      "cells": [
+        "Calendar"
+      ]
+    },
+    {
+      "cells": [
+        "Notes"
+      ]
+    },
+    {
+      "cells": [
+        "Deck"
+      ]
+    },
+    {
+      "cells": [
+        "Tasks"
+      ]
+    }
+  ]
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user is on the login page",
+  "name": "the user is logged in as \"Employee43\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Navigate to home page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@SYM-155"
+    },
+    {
+      "name": "@navigation"
+    }
+  ]
+});
 formatter.step({
-  "name": "the user enters \"Employee23\" and \"Employee123\"",
+  "name": "the user clicks \"Photos\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.LoginStepDefs.the_user_enters_and(java.lang.String,java.lang.String)"
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks Upload file and choose the file to upload",
-  "keyword": "Then "
+  "name": "the user clicks to Symund logo",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_clicks_Upload_file_and_choose_the_file_to_upload()"
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should be able to see the uploaded files",
+  "name": "the title should contain \"Files - Symund - QA\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_should_be_able_to_see_the_uploaded_files()"
+  "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -68,58 +147,447 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Create new folder and text documents",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@Upload"
-    },
-    {
-      "name": "@SYM-161"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user is on the login page",
+  "name": "the user is logged in as \"Employee43\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Navigate to home page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@SYM-155"
+    },
+    {
+      "name": "@navigation"
+    }
+  ]
+});
 formatter.step({
-  "name": "the user enters \"Employee23\" and \"Employee123\"",
+  "name": "the user clicks \"Activity\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.LoginStepDefs.the_user_enters_and(java.lang.String,java.lang.String)"
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks new folder",
-  "keyword": "Then "
+  "name": "the user clicks to Symund logo",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_clicks_new_folder()"
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks New text document",
+  "name": "the title should contain \"Files - Symund - QA\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_clicks_New_text_document()"
+  "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in as \"Employee43\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Navigate to home page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@SYM-155"
+    },
+    {
+      "name": "@navigation"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user clicks \"Talk\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks to Symund logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the title should contain \"Files - Symund - QA\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in as \"Employee43\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Navigate to home page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@SYM-155"
+    },
+    {
+      "name": "@navigation"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user clicks \"Contacts\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks to Symund logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the title should contain \"Files - Symund - QA\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in as \"Employee43\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Navigate to home page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@SYM-155"
+    },
+    {
+      "name": "@navigation"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user clicks \"Calendar\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks to Symund logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the title should contain \"Files - Symund - QA\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in as \"Employee43\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Navigate to home page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@SYM-155"
+    },
+    {
+      "name": "@navigation"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user clicks \"Notes\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks to Symund logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the title should contain \"Files - Symund - QA\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in as \"Employee43\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Navigate to home page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@SYM-155"
+    },
+    {
+      "name": "@navigation"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user clicks \"Deck\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks to Symund logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the title should contain \"Files - Symund - QA\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in as \"Employee43\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Navigate to home page",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@SYM-155"
+    },
+    {
+      "name": "@navigation"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user clicks \"Tasks\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks to Symund logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the title should contain \"Files - Symund - QA\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

@@ -1,4 +1,5 @@
 Feature: Verify that user logs out Symund Successfully
+  @logout
 
   Scenario:
     Given User is on the login page and page title is <Symund - QA>

@@ -3,110 +3,38 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-27T18:50:40.483Z",
-        "before": [
-          {
-            "result": {
-              "duration": 8581364400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.symund.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 5,
-        "name": "Upload Files",
+        "line": 4,
+        "name": "",
         "description": "",
-        "id": "the-user-should-be-able-to-upload;upload-files",
-        "after": [
-          {
-            "result": {
-              "duration": 822349800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 1998900,
+              "duration": 7991000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 11370485900,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user enters \"Employee23\" and \"Employee123\"",
+            "line": 5,
+            "name": "the user is logged in as \"Employee43\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Employee23\"",
-                  "offset": 16
-                },
-                {
-                  "val": "\"Employee123\"",
-                  "offset": 33
+                  "val": "\"Employee43\"",
+                  "offset": 25
                 }
               ],
-              "location": "com.symund.step_definitions.LoginStepDefs.the_user_enters_and(java.lang.String,java.lang.String)"
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3412684600,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user clicks Upload file and choose the file to upload",
-            "match": {
-              "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_clicks_Upload_file_and_choose_the_file_to_upload()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3073734500,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user should be able to see the uploaded files",
-            "match": {
-              "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_should_be_able_to_see_the_uploaded_files()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Upload"
-          },
-          {
-            "name": "@SYM-159"
+            "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-27T18:51:07.893Z",
+        "start_timestamp": "2021-02-25T22:42:23.769Z",
         "before": [
           {
             "result": {
-              "duration": 6451002100,
+              "duration": 21845000000,
               "status": "passed"
             },
             "match": {
@@ -114,14 +42,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "Create new folder and text documents",
+        "line": 15,
+        "name": "Navigate to home page",
         "description": "",
-        "id": "the-user-should-be-able-to-upload;create-new-folder-and-text-documents",
+        "id": "navigate-to-home-page;navigate-to-home-page;;2",
         "after": [
           {
             "result": {
-              "duration": 898370300,
+              "duration": 275000000,
               "status": "passed"
             },
             "match": {
@@ -130,85 +58,887 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 999900,
+              "duration": 110000000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 8170442500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the user enters \"Employee23\" and \"Employee123\"",
+            "line": 9,
+            "name": "the user clicks \"Photos\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Employee23\"",
+                  "val": "\"Photos\"",
                   "offset": 16
-                },
-                {
-                  "val": "\"Employee123\"",
-                  "offset": 33
                 }
               ],
-              "location": "com.symund.step_definitions.LoginStepDefs.the_user_enters_and(java.lang.String,java.lang.String)"
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3481336900,
+              "duration": 2224000000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "the user clicks new folder",
+            "line": 10,
+            "name": "the user clicks to Symund logo",
             "match": {
-              "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_clicks_new_folder()"
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 3364582200,
+              "duration": 15000000,
               "status": "passed"
             },
-            "line": 15,
-            "name": "the user clicks New text document",
+            "line": 11,
+            "name": "the title should contain \"Files - Symund - QA\"",
             "match": {
-              "location": "com.symund.step_definitions.UploadCreateFilesStepDefs.the_user_clicks_New_text_document()"
+              "arguments": [
+                {
+                  "val": "\"Files - Symund - QA\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Upload"
+            "name": "@SYM-155"
           },
           {
-            "name": "@SYM-161"
+            "name": "@navigation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5731000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in as \"Employee43\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee43\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T22:42:56.550Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12103000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Navigate to home page",
+        "description": "",
+        "id": "navigate-to-home-page;navigate-to-home-page;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 262000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 37000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks \"Activity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Activity\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1386000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks to Symund logo",
+            "match": {
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the title should contain \"Files - Symund - QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Files - Symund - QA\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SYM-155"
+          },
+          {
+            "name": "@navigation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6844000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in as \"Employee43\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee43\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T22:43:16.155Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11546000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Navigate to home page",
+        "description": "",
+        "id": "navigate-to-home-page;navigate-to-home-page;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 152000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks \"Talk\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Talk\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1358000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks to Symund logo",
+            "match": {
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the title should contain \"Files - Symund - QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Files - Symund - QA\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SYM-155"
+          },
+          {
+            "name": "@navigation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6425000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in as \"Employee43\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee43\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T22:43:36.127Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5746000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Navigate to home page",
+        "description": "",
+        "id": "navigate-to-home-page;navigate-to-home-page;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 172000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks \"Contacts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contacts\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1428000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks to Symund logo",
+            "match": {
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the title should contain \"Files - Symund - QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Files - Symund - QA\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SYM-155"
+          },
+          {
+            "name": "@navigation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7005000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in as \"Employee43\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee43\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T22:43:49.975Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10404000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Navigate to home page",
+        "description": "",
+        "id": "navigate-to-home-page;navigate-to-home-page;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 287000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks \"Calendar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Calendar\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2028000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks to Symund logo",
+            "match": {
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the title should contain \"Files - Symund - QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Files - Symund - QA\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SYM-155"
+          },
+          {
+            "name": "@navigation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6974000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in as \"Employee43\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee43\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T22:44:09.982Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13717000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Navigate to home page",
+        "description": "",
+        "id": "navigate-to-home-page;navigate-to-home-page;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks \"Notes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Notes\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1520000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks to Symund logo",
+            "match": {
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the title should contain \"Files - Symund - QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Files - Symund - QA\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SYM-155"
+          },
+          {
+            "name": "@navigation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9368000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in as \"Employee43\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee43\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T22:44:32.867Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13349000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Navigate to home page",
+        "description": "",
+        "id": "navigate-to-home-page;navigate-to-home-page;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 222000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks \"Deck\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Deck\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1975000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks to Symund logo",
+            "match": {
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the title should contain \"Files - Symund - QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Files - Symund - QA\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SYM-155"
+          },
+          {
+            "name": "@navigation"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6759000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in as \"Employee43\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee43\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T22:44:57.984Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6173000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Navigate to home page",
+        "description": "",
+        "id": "navigate-to-home-page;navigate-to-home-page;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks \"Tasks\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tasks\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1410000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks to Symund logo",
+            "match": {
+              "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the title should contain \"Files - Symund - QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Files - Symund - QA\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_title_should_contain(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SYM-155"
+          },
+          {
+            "name": "@navigation"
           }
         ]
       }
     ],
-    "name": "the user should be able to upload",
+    "name": "Navigate to home page",
     "description": "",
-    "id": "the-user-should-be-able-to-upload",
+    "id": "navigate-to-home-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UpLoadAndCreateFiles.feature",
+    "uri": "file:src/test/resources/features/NavigateHomePage.feature",
     "tags": [
       {
-        "name": "@Upload",
+        "name": "@SYM-155",
         "type": "Tag",
         "location": {
           "line": 1,
