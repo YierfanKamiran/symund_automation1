@@ -11,13 +11,13 @@ public class RecentUploadedFilesPage extends BasePage {
     @FindBy(xpath = "//*[@id='controls']/div[2]/a")
         public WebElement plusIcon;
 
-    @FindBy(xpath = "//*[@id='controls']/div[2]/div[2]/ul/li[1]/label/span[2]")
+    @FindBy(xpath = "//*[@id='controls']/div[2]/div[2]/ul/li[1]/label")
         public WebElement Uploadfile;
 
     @FindBy(css = "#view13-input-folder")
     public WebElement folderInputbox;
 
-    @FindBy (xpath = "//*[@id=\'controls\']/div[2]/div[2]/ul/li[2]/a/form/input")
+    @FindBy (xpath = "//*[@id='controls']/div[2]/div[2]/ul/li[2]/a/form/input")
     public WebElement arrow;
 
     @FindBy(css = "#view13-input-file")

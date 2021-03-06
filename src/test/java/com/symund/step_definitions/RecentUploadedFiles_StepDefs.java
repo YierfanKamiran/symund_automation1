@@ -18,14 +18,21 @@ public class RecentUploadedFiles_StepDefs {
 
     @And("the user clicks Upload file and choose the file from browser to upload")
     public void theUserClicksUploadFileAndChooseTheFileFromBrowserToUpload() {
-recentUploadedFilesPage.Uploadfile.click();
-        BrowserUtils.waitFor(2);
-        String myfolder = (System.getProperty("user.dir"));
+        recentUploadedFilesPage.Uploadfile.click();
+        String myprojectpath = (System.getProperty("user.dir"));
         String filePath = "src/test/resources/folder.txt";
-        String fullPath = myfolder +"/"+filePath;
-        recentUploadedFilesPage.Uploadfile.sendKeys(fullPath);
+        String fullPath = myprojectpath +"/"+filePath;
 
-        C:\Users\evrim\IdeaProjects\symund_automation1\src\test\resources\folder.txt
+        BrowserUtils.waitFor(5);
+
+
+
+
+
+        BrowserUtils.waitFor(6);
+
+
+
 
 
     }

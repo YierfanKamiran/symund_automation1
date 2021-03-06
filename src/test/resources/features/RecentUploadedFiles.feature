@@ -1,9 +1,9 @@
 
-@Recentupload
+@Recent
 
 Feature: the user should be able to see recently uploaded/created file(s) or folder under Recent tab
 Background:
-  Given the user is logged in as "Employee199"
+  Given the user is logged in as "Employee1"
   When the user clicks to plus sign button next to home icon
 
 
