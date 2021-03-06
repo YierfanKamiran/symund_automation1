@@ -1,18 +1,25 @@
 package com.symund.step_definitions;
 
+import com.symund.pages.RecentUploadedFilesPage;
+import com.symund.utilities.BrowserUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class RecentUploadedFiles_StepDefs {
 
+    RecentUploadedFilesPage recentUploadedFilesPage=new RecentUploadedFilesPage();
 
     @When("the user clicks to plus sign button next to home icon")
     public void the_user_clicks_to_plus_sign_button_next_to_home_icon() {
+        recentUploadedFilesPage.plusIcon.click();
+        BrowserUtils.waitFor(2);
     }
 
     @And("the user clicks Upload file and choose the file from browser to upload")
     public void theUserClicksUploadFileAndChooseTheFileFromBrowserToUpload() {
+        recentUploadedFilesPage.Uploadfile.click();
+
     }
     @When("the user should be able to see the uploaded file")
     public void the_user_should_be_able_to_see_the_uploaded_file() {

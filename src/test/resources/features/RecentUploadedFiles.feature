@@ -1,3 +1,6 @@
+
+@Recentupload
+
 Feature: the user should be able to see recently uploaded/created file(s) or folder under Recent tab
 Background:
   Given the user is logged in as "Employee199"

@@ -8,17 +8,29 @@ import org.openqa.selenium.support.PageFactory;
 public class RecentUploadedFilesPage extends BasePage {
     public RecentUploadedFilesPage () { PageFactory.initElements(Driver.get(), this);}
 
-        @FindBy(xpath = "//*[@id='controls']/div[2]/a")
+    @FindBy(xpath = "//*[@id='controls']/div[2]/a")
         public WebElement plusIcon;
 
     @FindBy(xpath = "//*[@id='controls']/div[2]/div[2]/ul/li[1]/label/span[2]")
         public WebElement Uploadfile;
-    @FindBy(xpath = "//*[@id='view13-input-folder']")
+
+    @FindBy(css = "#view13-input-folder")
     public WebElement folderInputbox;
 
+    @FindBy (xpath = "//*[@id=\'controls\']/div[2]/div[2]/ul/li[2]/a/form/input")
+    public WebElement arrow;
+
+    @FindBy(css = "#view13-input-file")
+    public WebElement fileInputbox;
+
+    @FindBy(xpath="//*[@id='controls']/div[2]/div[2]/ul/li[3]/a/form/input[2]")
+    public WebElement filearrow;
+    @FindBy(xpath = "//*[@id='app-navigation']/ul/li[2]/a")
+            public WebElement recentIcon;
+    
 
 
 
 
-    }
+}
 
