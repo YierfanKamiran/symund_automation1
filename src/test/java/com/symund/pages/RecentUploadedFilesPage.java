@@ -27,10 +27,9 @@ public class RecentUploadedFilesPage extends BasePage {
     public WebElement filearrow;
     @FindBy(xpath = "//*[@id='app-navigation']/ul/li[2]/a")
             public WebElement recentIcon;
-    
 
 
 
+    }
 
-}
 

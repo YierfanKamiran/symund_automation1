@@ -8,8 +8,7 @@ Background:
 
 
   Scenario: upload a file to be seen recent tab
-    And the user clicks Upload file and choose the file from browser to upload
-    And the user should be able to see the uploaded file
+    And the user clicks Upload file and choose the file to upload
     When the user clicks to Recent Tab
     Then the uploaded file is displayed in recent page
 

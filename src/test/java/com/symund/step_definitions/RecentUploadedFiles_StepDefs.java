@@ -5,6 +5,7 @@ import com.symund.utilities.BrowserUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class RecentUploadedFiles_StepDefs {
 
@@ -22,22 +23,23 @@ public class RecentUploadedFiles_StepDefs {
         String myprojectpath = (System.getProperty("user.dir"));
         String filePath = "src/test/resources/folder.txt";
         String fullPath = myprojectpath +"/"+filePath;
-
-        BrowserUtils.waitFor(5);
-
-
-
-
-
-        BrowserUtils.waitFor(6);
+        recentUploadedFilesPage.Uploadfile.sendKeys(fullPath);
+        BrowserUtils.waitFor(3);
 
 
 
 
 
-    }
-    @When("the user should be able to see the uploaded file")
-    public void the_user_should_be_able_to_see_the_uploaded_file() {
+
+
+
+
+
+
+
+
+
+
 
     }
 
