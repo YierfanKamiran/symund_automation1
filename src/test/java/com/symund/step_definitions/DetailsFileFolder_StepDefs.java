@@ -4,6 +4,7 @@ import com.symund.pages.DetailsFileFolderPage;
 import com.symund.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class DetailsFileFolder_StepDefs {
 
@@ -26,6 +27,7 @@ public class DetailsFileFolder_StepDefs {
 
     @Then("verify that details of File displayed on right side")
     public void verify_that_details_of_File_displayed_on_right_side() {
+
 
     }
 
