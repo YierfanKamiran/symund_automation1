@@ -43,16 +43,16 @@ public class RecentUploadedFiles_StepDefs {
 
     @When("the user enter a name in for new folder and clicks arrow")
     public void the_user_enter_a_name_in_for_new_folder_and_clicks_arrow() {
-
+    recentUploadedFilesPage.fileInputbox.sendKeys("evrim");
+    recentUploadedFilesPage.arrow.click();
     }
 
-    @Then("the user should be able to see the uploaded folder")
-    public void the_user_should_be_able_to_see_the_uploaded_folder() {
 
-    }
+
 
     @Then("the created folder is displayed in recent page")
     public void the_created_folder_is_displayed_in_recent_page() {
+
 
     }
 

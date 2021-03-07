@@ -17,7 +17,6 @@ Background:
       And the user clicks new folder
       And the user clear the input box
       And the user enter a name in for new folder and clicks arrow
-      Then the user should be able to see the uploaded folder
       When the user clicks to Recent Tab
       Then the created folder is displayed in recent page
 
