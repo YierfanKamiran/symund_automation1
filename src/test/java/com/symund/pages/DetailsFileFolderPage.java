@@ -11,9 +11,9 @@ public class DetailsFileFolderPage extends BasePage{
     public WebElement threeDotsForFile;
 
 
-    //file and folder icin details'e tiklayinca acilan sayfadaki modeullerin locator'i
+    //while clicks details, appeared tabs for File and Folder
     @FindBy(className = "app-sidebar-tabs__tab")
-    public List<WebElement> detailsOptions;
+    public List<WebElement> detailsTabs;
 
 
 

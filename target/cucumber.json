@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5460000000,
+              "duration": 5883000000,
               "status": "passed"
             },
             "line": 5,
@@ -30,11 +30,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-07T00:47:54.365Z",
+        "start_timestamp": "2021-03-07T23:35:33.107Z",
         "before": [
           {
             "result": {
-              "duration": 5274000000,
+              "duration": 10599000000,
               "status": "passed"
             },
             "match": {
@@ -49,7 +49,7 @@
         "after": [
           {
             "result": {
-              "duration": 95000000,
+              "duration": 96000000,
               "status": "passed"
             },
             "match": {
@@ -62,7 +62,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3102000000,
+              "duration": 3189000000,
               "status": "passed"
             },
             "line": 9,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 20049000000,
+              "duration": 20081000000,
               "status": "passed"
             },
             "line": 10,
@@ -113,7 +113,7 @@
           },
           {
             "result": {
-              "duration": 3186000000,
+              "duration": 3189000000,
               "status": "passed"
             },
             "line": 16,
@@ -125,13 +125,11 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 17,
             "name": "verify that details of File displayed on right side",
-            "match": {
-              "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.verify_that_details_of_File_displayed_on_right_side()"
-            },
+            "match": {},
             "keyword": "Then "
           }
         ],
@@ -141,6 +139,152 @@
           },
           {
             "name": "@SYM-182"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6143000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in as \"Employee43\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee43\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-07T23:36:16.246Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6589000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Check details of Folder",
+        "description": "",
+        "id": "details-file-and-folder;check-details-of-folder",
+        "after": [
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3156000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user clicks to \"three dots\" next to the file name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"three dots\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_user_clicks_to_next_to_the_file_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20047000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user should be able to see following",
+            "match": {
+              "location": "com.symund.step_definitions.ChangeStatusStepDefs.the_user_should_be_able_to_see_following(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Details"
+                ]
+              },
+              {
+                "cells": [
+                  "Rename"
+                ]
+              },
+              {
+                "cells": [
+                  "Move or copy"
+                ]
+              },
+              {
+                "cells": [
+                  "Download"
+                ]
+              },
+              {
+                "cells": [
+                  "Delete file"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3159000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the user clicks Details",
+            "match": {
+              "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.the_user_clicks_Details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "verify that details of Folder displayed on right side",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DetailsFileFolder"
+          },
+          {
+            "name": "@SYM-183"
           }
         ]
       }

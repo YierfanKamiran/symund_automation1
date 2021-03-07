@@ -25,16 +25,10 @@ public class DetailsFileFolder_StepDefs {
     }
 
 
-    @Then("verify that details of File displayed on right side")
-    public void verify_that_details_of_File_displayed_on_right_side() {
 
 
-    }
 
-    @Then("verify that details of Folder displayed on right side")
-    public void verify_that_details_of_Folder_displayed_on_right_side() {
 
-    }
 
 
 }
