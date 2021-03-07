@@ -1,5 +1,5 @@
 
-@Recent
+
 
 Feature: the user should be able to see recently uploaded/created file(s) or folder under Recent tab
 Background:
@@ -12,9 +12,9 @@ Background:
     When the user clicks to Recent Tab
     Then the uploaded file is displayed in recent page
 
-
+@Recent
   Scenario:create a new folder to be seen recent tab
-      And the user clicks new folder
+      And the user clicks new folder button
       And the user clear the input box
       And the user enter a name in for new folder and clicks arrow
       When the user clicks to Recent Tab

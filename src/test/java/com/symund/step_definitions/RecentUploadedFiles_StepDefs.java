@@ -36,15 +36,23 @@ public class RecentUploadedFiles_StepDefs {
     public void the_uploaded_file_is_displayed_in_recent_page() {
 
     }
+
+    @And("the user clicks new folder button")
+    public void theUserClicksNewFolderButton() {
+        recentUploadedFilesPage.fileInputbox.click();
+    }
+
     @When("the user clear the input box")
     public void the_user_clear_the_input_box() {
     recentUploadedFilesPage.fileInputbox.clear();
+    BrowserUtils.waitFor(2);
     }
 
     @When("the user enter a name in for new folder and clicks arrow")
     public void the_user_enter_a_name_in_for_new_folder_and_clicks_arrow() {
     recentUploadedFilesPage.fileInputbox.sendKeys("evrim");
     recentUploadedFilesPage.arrow.click();
+    BrowserUtils.waitFor(2);
     }
 
 
@@ -85,8 +93,6 @@ public class RecentUploadedFiles_StepDefs {
     public void the_created_text_documents_is_displayed_in_recent_tab() {
 
     }
-
-
 
 
 }
