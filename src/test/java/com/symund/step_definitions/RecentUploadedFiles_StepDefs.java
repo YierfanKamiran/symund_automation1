@@ -25,27 +25,11 @@ public class RecentUploadedFiles_StepDefs {
         String fullPath = myprojectpath +"/"+filePath;
         recentUploadedFilesPage.Uploadfile.sendKeys(fullPath);
         BrowserUtils.waitFor(3);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
     @When("the user clicks to Recent Tab")
     public void the_user_clicks_to_Recent_Tab() {
-
+    recentUploadedFilesPage.recentIcon.click();
     }
 
     @Then("the uploaded file is displayed in recent page")
@@ -54,7 +38,7 @@ public class RecentUploadedFiles_StepDefs {
     }
     @When("the user clear the input box")
     public void the_user_clear_the_input_box() {
-
+    recentUploadedFilesPage.fileInputbox.clear();
     }
 
     @When("the user enter a name in for new folder and clicks arrow")

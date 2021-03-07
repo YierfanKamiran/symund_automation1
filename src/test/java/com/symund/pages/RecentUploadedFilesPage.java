@@ -29,7 +29,10 @@ public class RecentUploadedFilesPage extends BasePage {
             public WebElement recentIcon;
 
 
-
+public void clearinputboxes(){
+    folderInputbox.clear();
+    fileInputbox.clear();
+}
     }
 
 
