@@ -1,0 +1,38 @@
+package com.symund.step_definitions;
+
+import com.symund.pages.DetailsFileFolderPage;
+import com.symund.utilities.BrowserUtils;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class DetailsFileFolder_StepDefs {
+
+    DetailsFileFolderPage detailsFileFolderPage = new DetailsFileFolderPage();
+
+
+    @When("the user clicks to three dots for file next to the file name")
+    public void the_user_clicks_to_three_dots_for_file_next_to_the_file_name() {
+        detailsFileFolderPage.threeDotsForFile.click();
+        BrowserUtils.waitFor(3);
+    }
+
+
+    @Then("the user clicks Details")
+    public void the_user_clicks_Details() {
+        detailsFileFolderPage.details.click();
+        BrowserUtils.waitFor(3);
+    }
+
+
+    @Then("verify that details of File displayed on right side")
+    public void verify_that_details_of_File_displayed_on_right_side() {
+
+    }
+
+    @Then("verify that details of Folder displayed on right side")
+    public void verify_that_details_of_Folder_displayed_on_right_side() {
+
+    }
+
+
+}
