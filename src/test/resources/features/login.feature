@@ -1,4 +1,4 @@
-
+@Zebo
 Feature: the user should be able to login
 
   Background:

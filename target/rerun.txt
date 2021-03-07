@@ -1,1 +1,2 @@
+file:src/test/resources/features/Logout.feature:4
 file:src/test/resources/features/ShareUnshareFile.feature:14
