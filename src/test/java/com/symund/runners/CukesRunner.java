@@ -13,8 +13,9 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/symund/step_definitions",
-        dryRun = true,
-        tags = "@SYM-171"
+        dryRun = false,
+        tags = "@necla",
+        strict = true
 )
 public class CukesRunner {
 }

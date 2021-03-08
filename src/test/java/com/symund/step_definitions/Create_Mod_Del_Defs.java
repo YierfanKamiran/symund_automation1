@@ -1,36 +1,73 @@
 package com.symund.step_definitions;
 
+import com.symund.pages.ContactPage;
+import com.symund.utilities.BrowserUtils;
+import com.symund.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
+
+import java.util.Map;
 
 public class Create_Mod_Del_Defs {
+    ContactPage contactPage = new ContactPage();
 
     @Given("the user is on Contact Tab")
     public void the_user_is_on_Contact_Tab() {
-
+       BrowserUtils.waitFor(3);
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.get();
+        jse.executeScript("arguments[0].click()", contactPage.contactButton);
+        //contactPage.contactButton.click();
     }
 
     @When("the user clicks on New contact button")
     public void the_user_clicks_on_New_contact_button() {
+        BrowserUtils.waitFor(3);
+        contactPage.newContactButton.click();
 
     }
     @When("the user provides the required information")
-    public void the_user_provides_the_required_information(io.cucumber.datatable.DataTable dataTable) {
-
+    public void the_user_provides_the_required_information(Map<String,String> userInfo) {
+        BrowserUtils.waitFor(3);
+        System.out.println(userInfo);
+        contactPage.name.clear();
+        contactPage.name.sendKeys(userInfo.get("Name"));
+        contactPage.company.sendKeys(userInfo.get("Company"));
+        contactPage.title.sendKeys(userInfo.get("Title"));
+        contactPage.phone.sendKeys(userInfo.get("Phone"));
+        contactPage.email.sendKeys(userInfo.get("Email"));
+        contactPage.address.sendKeys(userInfo.get("Address"));
+        contactPage.postCode.sendKeys(userInfo.get("Postal Code"));
+        contactPage.city.sendKeys(userInfo.get("City"));
     }
     @Then("verify that a new contact is created")
-    public void verify_that_a_new_contact_is_created() {
+    public void verify_that_a_new_contact_is_created(Map<String,String> userInfo) {
+        BrowserUtils.waitFor(1);
 
+        String expectedName="Nejla Turk";
+    String actualName= userInfo.get("Name");
+    String expectedPhone="07428579933";
+   String actualPhone= userInfo.get("Phone");
+        Assert.assertEquals(expectedName,actualName);
+        Assert.assertEquals(expectedPhone,actualPhone);
     }
 
     @When("the user clicks on Name")
     public void the_user_clicks_on_Name() {
+        BrowserUtils.waitFor(1);
+        contactPage.nameModify.click();
 
     }
     @When("the user writes a new Name")
     public void the_user_writes_a_new_Name() {
-
+        BrowserUtils.waitFor(3);
+        contactPage.name.clear();
+        BrowserUtils.waitFor(1);
+        contactPage.name.sendKeys("Mesut Turk");
+        BrowserUtils.waitFor(3);
+        contactPage.email.clear();
     }
     @Then("verify that Name is modified")
     public void verify_that_Name_is_modified() {

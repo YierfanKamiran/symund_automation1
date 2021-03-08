@@ -1,5 +1,4 @@
 
-@SYM-171
 Feature: Create, modified, deleted contacts
 
   A new contact could be created or an existing one could be modified/deleted
@@ -8,13 +7,12 @@ Feature: Create, modified, deleted contacts
     Given the user is on the login page
     And the user is logged in as "Employee1"
 
-
+@necla
   Scenario: As a user, I should be able to Add a new contact -AC1
 
     Given the user is on Contact Tab
     When the user clicks on New contact button
     And the user provides the required information
-
       |Name        |Nejla Turk           |
       |Company     |HNS London Ltd       |
       |Title       |Vice Presedent       |
@@ -23,11 +21,9 @@ Feature: Create, modified, deleted contacts
       |Address     |111 St. Giles Street |
       |Postal Code |NN1 1JW              |
       |City        |Northampton          |
-
-    Then verify that a new contact is created
-
-  Scenario: As a user, I should be able to modify the text fields -AC1
-
+ Then verify that a new contact is created
+  @necla
+  Scenario: As a user, I should be able to modify the text fields-2 -AC1
     Given the user is on Contact Tab
     When the user clicks on Name
     And the user writes a new Name
