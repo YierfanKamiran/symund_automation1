@@ -1,62 +1,67 @@
 package com.symund.step_definitions;
 
 import com.symund.pages.RecentUploadedFilesPage;
+import com.symund.pages.UploadFilesPage;
 import com.symund.utilities.BrowserUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.FindBy;
 
 public class RecentUploadedFiles_StepDefs {
 
-    RecentUploadedFilesPage recentUploadedFilesPage=new RecentUploadedFilesPage();
+    RecentUploadedFilesPage recentUploadedFilesPage = new RecentUploadedFilesPage();
 
-    @When("the user clicks to plus sign button next to home icon")
-    public void the_user_clicks_to_plus_sign_button_next_to_home_icon() {
+    @Then("the user clicks plus sign")
+    public void theUserClicksPlusSign() {
         recentUploadedFilesPage.plusIcon.click();
-        BrowserUtils.waitFor(2);
     }
 
-    @And("the user clicks Upload file and choose the file from browser to upload")
-    public void theUserClicksUploadFileAndChooseTheFileFromBrowserToUpload() {
-        recentUploadedFilesPage.Uploadfile.click();
+    @And("the user clicks Upload file button and choose the file to upload")
+    public void theUserClicksUploadFileButtonAndChooseTheFileToUpload() {
+
         String myprojectpath = (System.getProperty("user.dir"));
         String filePath = "src/test/resources/folder.txt";
         String fullPath = myprojectpath +"/"+filePath;
         recentUploadedFilesPage.Uploadfile.sendKeys(fullPath);
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitFor(5);
     }
 
-    @When("the user clicks to Recent Tab")
-    public void the_user_clicks_to_Recent_Tab() {
-    recentUploadedFilesPage.recentIcon.click();
+
+    @When("the user clicks to {string}")
+    public void theUserClicksTo(String recenttab) {
+        recentUploadedFilesPage.navigateToLeftModule(recenttab);
+
+        BrowserUtils.waitFor(5);
     }
 
-    @Then("the uploaded file is displayed in recent page")
-    public void the_uploaded_file_is_displayed_in_recent_page() {
 
+    @Then("the users should see {string} is displayed in recent page")
+    public void theUsersShouldSeeIsDisplayedInRecentPage(String expectedfile) {
+        Assert.assertEquals(expectedfile,recentUploadedFilesPage.filenameinrecent.getText());
     }
 
     @And("the user clicks new folder button")
     public void theUserClicksNewFolderButton() {
-        recentUploadedFilesPage.fileInputbox.click();
+        recentUploadedFilesPage.newfolder.click();
+        BrowserUtils.waitFor(3);
     }
 
     @When("the user clear the input box")
     public void the_user_clear_the_input_box() {
-    recentUploadedFilesPage.fileInputbox.clear();
-    BrowserUtils.waitFor(2);
+        recentUploadedFilesPage.newfolderinbox.clear();
+        BrowserUtils.waitFor(2);
     }
 
-    @When("the user enter a name in for new folder and clicks arrow")
-    public void the_user_enter_a_name_in_for_new_folder_and_clicks_arrow() {
-    recentUploadedFilesPage.fileInputbox.sendKeys("evrim");
-    recentUploadedFilesPage.arrow.click();
-    BrowserUtils.waitFor(2);
+    @And("the user enter a {string} in for new folder and clicks arrow")
+    public void theUserEnterAInForNewFolderAndClicksArrow(String name) {
+    recentUploadedFilesPage.newfolderinbox.sendKeys("Evrim");
+    recentUploadedFilesPage.newfolderarrow.click();
+    BrowserUtils.waitFor(5);
+
     }
-
-
-
 
     @Then("the created folder is displayed in recent page")
     public void the_created_folder_is_displayed_in_recent_page() {
@@ -96,4 +101,3 @@ public class RecentUploadedFiles_StepDefs {
 
 
 }
-
