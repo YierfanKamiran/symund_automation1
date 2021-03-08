@@ -11,9 +11,20 @@ public class DetailsFileFolderPage extends BasePage{
     public WebElement threeDotsForFile;
 
 
-    //while clicks details, appeared tabs for File and Folder
-    @FindBy(className = "app-sidebar-tabs__tab")
-    public List<WebElement> detailsTabs;
+    @FindBy(xpath = "(//*[@*='activityTabView'])[1]")
+    public WebElement activity;
+
+    @FindBy(xpath = "(//*[@*='chat'])[1]")
+    public WebElement chat;
+
+    @FindBy(xpath = "(//*[@*='commentsTabView'])[1]")
+    public WebElement comments;
+
+    @FindBy(xpath = "(//*[@*='sharing'])[1]")
+    public WebElement sharing;
+
+    @FindBy(xpath = "(//*[@*='versionsTabView'])[1]")
+    public WebElement versions;
 
 
 

@@ -81,9 +81,11 @@ formatter.step({
   "name": "verify that details of File displayed on right side",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.verify_that_details_of_File_displayed_on_right_side()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -160,9 +162,11 @@ formatter.step({
   "name": "verify that details of Folder displayed on right side",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.verify_that_details_of_Folder_displayed_on_right_side()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
