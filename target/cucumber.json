@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5952000000,
+              "duration": 6531139000,
               "status": "passed"
             },
             "line": 5,
@@ -30,11 +30,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-08T01:07:27.787Z",
+        "start_timestamp": "2021-03-04T16:10:48.916Z",
         "before": [
           {
             "result": {
-              "duration": 5535000000,
+              "duration": 6528503000,
               "status": "passed"
             },
             "match": {
@@ -45,11 +45,11 @@
         "line": 8,
         "name": "Check details of File",
         "description": "",
-        "id": "details-file-and-folder;check-details-of-file",
+        "id": "share-file/folder-and-un-share-file/folder;share-file-and-folder",
         "after": [
           {
             "result": {
-              "duration": 97000000,
+              "duration": 148251000,
               "status": "passed"
             },
             "match": {
@@ -62,7 +62,7 @@
         "steps": [
           {
             "result": {
-              "duration": 118000000,
+              "duration": 3316583000,
               "status": "passed"
             },
             "line": 9,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 20052000000,
+              "duration": 1079297000,
               "status": "passed"
             },
             "line": 10,
@@ -113,7 +113,7 @@
           },
           {
             "result": {
-              "duration": 161000000,
+              "duration": 2270376000,
               "status": "passed"
             },
             "line": 16,
@@ -125,7 +125,7 @@
           },
           {
             "result": {
-              "duration": 540000000,
+              "duration": 56224000,
               "status": "passed"
             },
             "line": 17,
@@ -134,14 +134,50 @@
               "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.verify_that_details_of_File_displayed_on_right_side()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2204275000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks to \"All files\" module on left navigation menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"All files\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_user_clicks_to_module_on_left_navigation_menu(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41175000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the \"Shared\" mark should be displayed next to file name in All files page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Shared\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_mark_should_be_displayed_next_to_file_name_in_All_files_page(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@DetailsFileFolder"
+            "name": "@SYM-174"
           },
           {
-            "name": "@SYM-182"
+            "name": "@wip"
           }
         ]
       },
@@ -154,7 +190,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5755000000,
+              "duration": 7738396000,
               "status": "passed"
             },
             "line": 5,
@@ -173,11 +209,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-08T01:08:00.314Z",
+        "start_timestamp": "2021-03-04T16:11:11.254Z",
         "before": [
           {
             "result": {
-              "duration": 4288000000,
+              "duration": 5059646000,
               "status": "passed"
             },
             "match": {
@@ -185,14 +221,14 @@
             }
           }
         ],
-        "line": 21,
-        "name": "Check details of Folder",
+        "line": 14,
+        "name": "Un-share file and folder",
         "description": "",
-        "id": "details-file-and-folder;check-details-of-folder",
+        "id": "share-file/folder-and-un-share-file/folder;un-share-file-and-folder",
         "after": [
           {
             "result": {
-              "duration": 97000000,
+              "duration": 133614000,
               "status": "passed"
             },
             "match": {
@@ -205,7 +241,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3107000000,
+              "duration": 3185825000,
               "status": "passed"
             },
             "line": 22,
@@ -223,7 +259,7 @@
           },
           {
             "result": {
-              "duration": 20017000000,
+              "duration": 120271000,
               "status": "passed"
             },
             "line": 23,
@@ -262,42 +298,102 @@
           },
           {
             "result": {
-              "duration": 107000000,
+              "duration": 180991000,
               "status": "passed"
             },
-            "line": 29,
-            "name": "the user clicks Details",
+            "line": 17,
+            "name": "the user chooses \"Un-share\" button",
             "match": {
-              "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.the_user_clicks_Details()"
+              "arguments": [
+                {
+                  "val": "\"Un-share\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_user_chooses_button(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 652000000,
+              "duration": 2309136000,
               "status": "passed"
             },
             "line": 30,
             "name": "verify that details of Folder displayed on right side",
             "match": {
-              "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.verify_that_details_of_Folder_displayed_on_right_side()"
+              "arguments": [
+                {
+                  "val": "\"Shares\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_user_clicks_to_module_on_left_navigation_menu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20008845000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the unshared file should disappear from Shares page",
+            "match": {
+              "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_unshared_file_should_disappear_from_Shares_page()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2148548000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user clicks to \"All files\" module on left navigation menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"All files\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_user_clicks_to_module_on_left_navigation_menu(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59760000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the \"Shared\" mark should be disappeared next to file name in All files page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Shared\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_mark_should_be_disappeared_next_to_file_name_in_All_files_page(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@DetailsFileFolder"
+            "name": "@SYM-175"
           },
           {
-            "name": "@SYM-183"
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "Details File and Folder",
+    "name": "Share file/folder and un-share file/folder",
     "description": "",
-    "id": "details-file-and-folder",
+    "id": "share-file/folder-and-un-share-file/folder",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/DetailsFileFolder.feature",
     "tags": [
