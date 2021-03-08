@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class ShareUnshareFilePage extends BasePage {
 
     public ShareUnshareFilePage (){
@@ -15,7 +17,7 @@ public class ShareUnshareFilePage extends BasePage {
     public WebElement createShareLink;
 
     @FindBy(xpath = "//td[@class='filename']/a/span[1]")
-    public WebElement FileNameinSharesTab;
+    public  WebElement FileNameinSharesTab;
 
     @FindBy(xpath = "(//span[@class='nametext']/span)[1]")
     public WebElement FileNameinAllFilesTab;

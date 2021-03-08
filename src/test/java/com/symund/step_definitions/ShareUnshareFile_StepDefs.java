@@ -2,10 +2,14 @@ package com.symund.step_definitions;
 
 import com.symund.pages.ShareUnshareFilePage;
 import com.symund.utilities.BrowserUtils;
+import com.symund.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 public class ShareUnshareFile_StepDefs {
@@ -65,6 +69,12 @@ public class ShareUnshareFile_StepDefs {
 
     }
 
+    @Then("the unshared file should disappear from Shares page")
+    public void the_unshared_file_should_disappear_from_Shares_page() {
+
+        List<WebElement> unsharedFiles=Driver.get().findElements(By.xpath("//td[@class='filename']/a/span"));
+        Assert.assertTrue(unsharedFiles.isEmpty());
+    }
 
 
     @When("the {string} mark should be disappeared next to file name in All files page")
