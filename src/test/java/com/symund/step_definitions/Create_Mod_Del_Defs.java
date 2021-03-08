@@ -52,35 +52,46 @@ public class Create_Mod_Del_Defs {
    String actualPhone= userInfo.get("Phone");
         Assert.assertEquals(expectedName,actualName);
         Assert.assertEquals(expectedPhone,actualPhone);
+        System.out.println("expectedName = " + expectedName);
+        System.out.println("actualName = " + actualName);
     }
 
     @When("the user clicks on Name")
     public void the_user_clicks_on_Name() {
         BrowserUtils.waitFor(1);
-        contactPage.nameModify.click();
+        contactPage.name.click();
 
     }
     @When("the user writes a new Name")
     public void the_user_writes_a_new_Name() {
         BrowserUtils.waitFor(3);
-        contactPage.name.clear();
-        BrowserUtils.waitFor(1);
-        contactPage.name.sendKeys("Mesut Turk");
-        BrowserUtils.waitFor(3);
-        contactPage.email.clear();
+
+        JavascriptExecutor jse = (JavascriptExecutor)Driver.get();
+        jse.executeScript("arguments[0].value='Mesut Turk';", contactPage.deletedName);
+
     }
     @Then("verify that Name is modified")
-    public void verify_that_Name_is_modified() {
+    public void verify_that_Name_is_modified(Map<String,String> userInfo) {
+        BrowserUtils.waitFor(1);
+        String expectedName="Mesut Turk";
+        String actualName= userInfo.get("Name");
+        Assert.assertEquals(expectedName,actualName);
+        System.out.println("expectedNameMod = " + expectedName);
 
     }
 
-    @When("the user clicks on Contact")
-    public void the_user_clicks_on_Contact() {
+    @When("the user clicks on existing Contact")
+    public void the_user_clicks_on_existing_Contact() {
+
+        BrowserUtils.waitFor(2);
+        contactPage.existingContact.click();
 
     }
     @When("user clicks the three dots icon from top-right")
     public void user_clicks_the_three_dots_icon_from_top_right() {
-
+        BrowserUtils.waitFor(2);
+        contactPage.threeDots.click();
+        BrowserUtils.waitFor(2);
     }
     @When("user clicks delete")
     public void user_clicks_delete() {
@@ -88,6 +99,8 @@ public class Create_Mod_Del_Defs {
     }
     @Then("the contact will no longer be visible in the Contacts Tab")
     public void the_contact_will_no_longer_be_visible_in_the_Contacts_Tab() {
+        Assert.assertFalse("Deleted Succesfully", Driver.get().getPageSource().contains("Beyza Gulap"));
+
 
     }
 

@@ -22,16 +22,27 @@ Feature: Create, modified, deleted contacts
       |Postal Code |NN1 1JW              |
       |City        |Northampton          |
  Then verify that a new contact is created
+   |Name        |Nejla Turk           |
+   |Company     |HNS London Ltd       |
+   |Title       |Vice Presedent       |
+   |Phone       |07428579933          |
+   |Email       |nej@hotmail.com      |
+   |Address     |111 St. Giles Street |
+   |Postal Code |NN1 1JW              |
+   |City        |Northampton          |
+
   @necla
-  Scenario: As a user, I should be able to modify the text fields-2 -AC1
+  Scenario: As a user, I should be able to modify the text fields -AC1
     Given the user is on Contact Tab
     When the user clicks on Name
     And the user writes a new Name
     Then verify that Name is modified
+      |Name        |Mesut Turk           |
 
+    @necla1
   Scenario: As a user, I should be able to delete the contact -AC1
     Given the user is on Contact Tab
-    When the user clicks on Contact
+    When the user clicks on existing Contact
     And user clicks the three dots icon from top-right
     And user clicks delete
     Then the contact will no longer be visible in the Contacts Tab

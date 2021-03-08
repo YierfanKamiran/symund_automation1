@@ -33,12 +33,12 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "As a user, I should be able to Add a new contact -AC1",
+  "name": "As a user, I should be able to delete the contact -AC1",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@necla"
+      "name": "@necla1"
     }
   ]
 });
@@ -53,128 +53,47 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks on New contact button",
+  "name": "the user clicks on existing Contact",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_New_contact_button()"
+  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_existing_Contact()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user provides the required information",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_provides_the_required_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
-});
-formatter.result({
-  "error_message": "io.cucumber.core.exception.CucumberException: Step [the user provides the required information] is defined with 1 parameters at \u0027com.symund.step_definitions.Create_Mod_Del_Defs.the_user_provides_the_required_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)\u0027.\nHowever, the gherkin step has 0 arguments.\nStep text: the user provides the required information\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:134)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\n",
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027app-content-list-item-line-one\u0027 and contains(text(), \u0027Beyza Gulap\u0027)]\"}\n  (Session info: chrome\u003d88.0.4324.192)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Nejla-MBP\u0027, ip: \u00272a00:23c7:4d16:2e01:2098:5fa2:2482:bdc7%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.192, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/92/5rw9s1fs63z...}, goog:chromeOptions: {debuggerAddress: localhost:54026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5cfc89bdecbc2528e5287e50a9e6e889\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027app-content-list-item-line-one\u0027 and contains(text(), \u0027Beyza Gulap\u0027)]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_existing_Contact(Create_Mod_Del_Defs.java:87)\n\tat ✽.the user clicks on existing Contact(file:///Users/nejlaturk/symund_automation1/src/test/resources/features/Create_modified_deletedcontacts.feature:45)\n",
   "status": "failed"
 });
 formatter.step({
-  "name": "verify that a new contact is created",
-  "rows": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
-  ],
+  "name": "user clicks the three dots icon from top-right",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_clicks_the_three_dots_icon_from_top_right()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user clicks delete",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_clicks_delete()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "the contact will no longer be visible in the Contacts Tab",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.verify_that_a_new_contact_is_created(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_contact_will_no_longer_be_visible_in_the_Contacts_Tab()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.embedding("image/png", "embedded0.png", "screenshot");
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user is logged in as \"Employee1\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "As a user, I should be able to modify the text fields-2 -AC1",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@necla"
-    }
-  ]
-});
-formatter.step({
-  "name": "the user is on Contact Tab",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_is_on_Contact_Tab()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user clicks on Name",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_Name()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user writes a new Name",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_writes_a_new_Name()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify that Name is modified",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.verify_that_Name_is_modified()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.after({
   "status": "passed"
 });
