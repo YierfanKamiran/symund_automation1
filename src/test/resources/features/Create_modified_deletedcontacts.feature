@@ -51,7 +51,7 @@ Feature: Create, modified, deleted contacts
   Scenario: As a user, I should be able to a new contact  be later on added to a group
   from the contact details -AC2
     Given the user is on Contact Tab
-    When user click on new or existing contact
-    And user click on the Groups combobox
+    When the user clicks on existing Contact
+    Then user click on the Groups combobox
     And user select groups from the lists
     Then verify that added the group from the contact details

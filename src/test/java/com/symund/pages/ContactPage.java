@@ -15,7 +15,7 @@ public class ContactPage extends BasePage{
     public WebElement newContactButton;
 
 @FindBy(css="#contact-fullname")
-    public WebElement name;
+     public WebElement name;
 
     @FindBy(css="#contact-org")
     public WebElement company;
@@ -54,6 +54,9 @@ public class ContactPage extends BasePage{
 
     @FindBy(xpath = "/html/body/div[6]/div/div[1]/div[1]/div/ul/li[3]/button")
             public WebElement deleted;
+
+    @FindBy(xpath="//div[@class='app-content-list-item-line-one' and contains(text(), 'Nejla Turk')]")
+    public WebElement getExistingContact;
 
 }
 

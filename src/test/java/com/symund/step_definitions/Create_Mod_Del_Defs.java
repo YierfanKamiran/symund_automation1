@@ -103,12 +103,6 @@ public class Create_Mod_Del_Defs {
     public void the_contact_will_no_longer_be_visible_in_the_Contacts_Tab() {
         Assert.assertFalse("Deleted Succesfully", Driver.get().getPageSource().contains("Kedi Turk"));
 
-
-    }
-
-    @When("user click on new or existing contact")
-    public void user_click_on_new_existing_contact() {
-
     }
     @When("user click on the Groups combobox")
     public void user_click_on_the_Groups_combobox() {
