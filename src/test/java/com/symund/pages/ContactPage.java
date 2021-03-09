@@ -43,10 +43,10 @@ public class ContactPage extends BasePage{
     public WebElement nameModify;
 
 
-    @FindBy(xpath="//div[@class='app-content-list-item-line-one' and contains(text(), 'Kedi Turk')]")
+    @FindBy(xpath="//div[@class='app-content-list-item-line-one' and contains(text(), 'Nejla Turk')]")
     public WebElement deletedName;
 
-    @FindBy(xpath="//div[@class='app-content-list-item-line-one' and contains(text(), 'Kedi Turk')]")
+    @FindBy(xpath="//div[@class='app-content-list-item-line-one' and contains(text(), 'Nejla Turk')]")
     public WebElement existingContact;
 
     @FindBy(xpath = "//*[@id='app-content-wrapper']/div[2]/header/div[3]/div/div/div/button")
