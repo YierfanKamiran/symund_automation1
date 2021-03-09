@@ -95,11 +95,13 @@ public class Create_Mod_Del_Defs {
     }
     @When("user clicks delete")
     public void user_clicks_delete() {
-
+        BrowserUtils.waitFor(6);
+        contactPage.deleted.click();
+        BrowserUtils.waitFor(2);
     }
     @Then("the contact will no longer be visible in the Contacts Tab")
     public void the_contact_will_no_longer_be_visible_in_the_Contacts_Tab() {
-        Assert.assertFalse("Deleted Succesfully", Driver.get().getPageSource().contains("Beyza Gulap"));
+        Assert.assertFalse("Deleted Succesfully", Driver.get().getPageSource().contains("Kedi Turk"));
 
 
     }

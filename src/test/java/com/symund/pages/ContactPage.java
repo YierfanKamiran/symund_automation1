@@ -46,11 +46,14 @@ public class ContactPage extends BasePage{
     @FindBy(xpath="//div[@class='app-content-list-item-line-one' and contains(text(), 'Kedi Turk')]")
     public WebElement deletedName;
 
-    @FindBy(xpath="//div[@class='app-content-list-item-line-one' and contains(text(), 'Beyza Gulap')]")
+    @FindBy(xpath="//div[@class='app-content-list-item-line-one' and contains(text(), 'Kedi Turk')]")
     public WebElement existingContact;
 
-    @FindBy(xpath = "//div[@class='action-button__icon icon-delete']")
+    @FindBy(xpath = "//*[@id='app-content-wrapper']/div[2]/header/div[3]/div/div/div/button")
     public WebElement threeDots;
+
+    @FindBy(xpath = "/html/body/div[6]/div/div[1]/div[1]/div/ul/li[3]/button")
+            public WebElement deleted;
 
 }
 
