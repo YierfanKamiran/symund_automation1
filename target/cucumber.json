@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 999100,
+              "duration": 1000400,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 7999799600,
+              "duration": 7036382900,
               "status": "passed"
             },
             "line": 5,
@@ -42,15 +42,51 @@
               "location": "com.symund.step_definitions.LoginStepDefs.the_user_enters_and(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2274271900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks dots for comments",
+            "match": {
+              "location": "com.symund.step_definitions.CommentStepDefs.theUserClicksDotsForComments()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 278910400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks Details",
+            "match": {
+              "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.the_user_clicks_Details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 757756200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user clicks comments",
+            "match": {
+              "location": "com.symund.step_definitions.CommentStepDefs.theUserClicksComments()"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-10T04:43:17.023Z",
+        "start_timestamp": "2021-03-10T17:23:35.437Z",
         "before": [
           {
             "result": {
-              "duration": 7545513100,
+              "duration": 7046996300,
               "status": "passed"
             },
             "match": {
@@ -58,14 +94,14 @@
             }
           }
         ],
-        "line": 7,
+        "line": 10,
         "name": "A comment box should be displayed",
         "description": "",
         "id": "comment-box-functions;a-comment-box-should-be-displayed",
         "after": [
           {
             "result": {
-              "duration": 823126800,
+              "duration": 863025100,
               "status": "passed"
             },
             "match": {
@@ -78,10 +114,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2180042700,
+              "duration": 2124052400,
               "status": "passed"
             },
-            "line": 8,
+            "line": 11,
             "name": "the user clicks dots for comments",
             "match": {
               "location": "com.symund.step_definitions.CommentStepDefs.theUserClicksDotsForComments()"
@@ -90,10 +126,10 @@
           },
           {
             "result": {
-              "duration": 211927900,
+              "duration": 145884100,
               "status": "passed"
             },
-            "line": 9,
+            "line": 12,
             "name": "the user clicks Details",
             "match": {
               "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.the_user_clicks_Details()"
@@ -102,10 +138,10 @@
           },
           {
             "result": {
-              "duration": 637297300,
+              "duration": 488990400,
               "status": "passed"
             },
-            "line": 10,
+            "line": 13,
             "name": "the user clicks comments",
             "match": {
               "location": "com.symund.step_definitions.CommentStepDefs.theUserClicksComments()"
@@ -114,15 +150,186 @@
           },
           {
             "result": {
-              "duration": 88967100,
+              "duration": 87971600,
               "status": "passed"
             },
-            "line": 11,
+            "line": 14,
             "name": "the comments box should be displayed",
             "match": {
               "location": "com.symund.step_definitions.CommentStepDefs.theCommentsBoxShouldBeDisplayed()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@comment"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9099090300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user enters \"Employee23\" and \"Employee123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee23\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Employee123\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2176355600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks dots for comments",
+            "match": {
+              "location": "com.symund.step_definitions.CommentStepDefs.theUserClicksDotsForComments()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 214931100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks Details",
+            "match": {
+              "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.the_user_clicks_Details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 571814900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user clicks comments",
+            "match": {
+              "location": "com.symund.step_definitions.CommentStepDefs.theUserClicksComments()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-10T17:23:56.737Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15998448300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "the user should be able to comment",
+        "description": "",
+        "id": "comment-box-functions;the-user-should-be-able-to-comment",
+        "after": [
+          {
+            "result": {
+              "duration": 803749900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 811258100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user enters comment \"I love you \"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"I love you \"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.symund.step_definitions.CommentStepDefs.theUserEntersComment(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 102969400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user clicks comment arrow button",
+            "match": {
+              "location": "com.symund.step_definitions.CommentStepDefs.theUserClicksCommentArrowButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 730469600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user\u0027s username should be seen",
+            "match": {
+              "location": "com.symund.step_definitions.CommentStepDefs.theUserSUsernameShouldBeSeen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121959000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the box is emptied for new comment",
+            "match": {
+              "location": "com.symund.step_definitions.CommentStepDefs.theBoxIsEmptiedForNewComment()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
