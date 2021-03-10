@@ -329,6 +329,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@necla"
+    },
+    {
+      "name": "@necla2"
     }
   ]
 });
@@ -338,6 +341,16 @@ formatter.step({
 });
 formatter.match({
   "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_is_on_Contact_Tab()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user creates new a new group",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_creates_new_a_new_group()"
 });
 formatter.result({
   "status": "passed"
@@ -353,7 +366,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click on the Groups combobox",
+  "name": "user click on the grouplists",
   "keyword": "Then "
 });
 formatter.match({
@@ -363,7 +376,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user select groups from the lists",
+  "name": "user select group from the lists",
   "keyword": "And "
 });
 formatter.match({

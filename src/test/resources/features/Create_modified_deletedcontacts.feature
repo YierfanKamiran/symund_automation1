@@ -47,11 +47,12 @@ Feature: Create, modified, deleted contacts
     And user clicks delete
     Then the contact will no longer be visible in the Contacts Tab
 
-
+ @necla2
   Scenario: As a user, I should be able to a new contact  be later on added to a group
   from the contact details -AC2
     Given the user is on Contact Tab
+    Then the user creates new a new group
     When the user clicks on existing Contact
-    Then user click on the Groups combobox
-    And user select groups from the lists
+    Then user click on the grouplists
+    And user select group from the lists
     Then verify that added the group from the contact details

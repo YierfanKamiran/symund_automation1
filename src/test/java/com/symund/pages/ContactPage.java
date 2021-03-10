@@ -58,5 +58,26 @@ public class ContactPage extends BasePage{
     @FindBy(xpath="//div[@class='app-content-list-item-line-one' and contains(text(), 'Nejla Turk')]")
     public WebElement getExistingContact;
 
+    @FindBy(xpath = "//*[@id='newgroup']/div/div/div/div/button")
+    public WebElement newgroupName;
+
+    @FindBy(xpath = "/html/body/div[6]/div/div[1]/div[1]/div/ul/li[2]/span/form/input[2]")
+    public WebElement addGroupName;
+
+    @FindBy(id = "rightClickDetector")
+    public WebElement rightClickArrow;
+
+    @FindBy(xpath = "//ul/li/span/div[@class='name-parts']")
+    public WebElement groupBox;
+
+    @FindBy(css = "#everyone > a")
+    public WebElement allContact;
+
+    @FindBy(xpath = "/html/body/div[3]/main/div/div[2]/section/div[5]/div/div[2]/div[2]/input")
+    public WebElement groups;
+
+    @FindBy(xpath = "//*[@id='app-navigation-vue']/ul/li[4]/a")
+    public WebElement selectGroup;
+
 }
 

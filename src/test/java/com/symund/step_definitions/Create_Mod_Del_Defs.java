@@ -7,8 +7,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 
+import java.util.List;
 import java.util.Map;
 
 public class Create_Mod_Del_Defs {
@@ -104,16 +107,35 @@ public class Create_Mod_Del_Defs {
         Assert.assertFalse("Deleted Succesfully", Driver.get().getPageSource().contains("Kedi Turk"));
 
     }
-    @When("user click on the Groups combobox")
+
+    @Then("the user creates new a new group")
+    public void the_user_creates_new_a_new_group() {
+
+        contactPage.newgroupName.click();
+        BrowserUtils.waitFor(2);
+        contactPage.addGroupName.sendKeys("Group2");
+        BrowserUtils.waitFor(3);
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.get();
+        jse.executeScript("arguments[0].click()", contactPage.rightClickArrow);
+    }
+
+    @When("user click on the grouplists")
     public void user_click_on_the_Groups_combobox() {
+        BrowserUtils.waitFor(2);
+        contactPage.groups.click();
 
     }
-    @When("user select groups from the lists")
+    @Then("user select group from the lists")
     public void user_select_groups_from_the_lists() {
-
+        BrowserUtils.waitFor(2);
+        contactPage.selectGroup.click();
+        BrowserUtils.waitFor(4);
     }
+
     @Then("verify that added the group from the contact details")
     public void verify_that_added_the_group_from_the_contact_details() {
+
+
 
     }
 
