@@ -14,4 +14,10 @@ public class CommentsPage {
     public WebElement CommentBox;
     @FindBy(xpath = "(//span[@class='icon icon-more'])[2]")
     public WebElement ThreeDotsForComments;
+    @FindBy(xpath = "(//input[@type='submit'])[2]")
+    public WebElement ArrowBtn;
+    @FindBy(xpath = "(//div[.='Employee23'])[2]")
+    public WebElement ActualUsername;
+    @FindBy(xpath = "(//div[.='Employee23'])[1]")
+    public WebElement ExpectedUsername;
 }
