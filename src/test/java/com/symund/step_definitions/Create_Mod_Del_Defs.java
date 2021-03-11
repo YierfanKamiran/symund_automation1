@@ -87,15 +87,16 @@ public class Create_Mod_Del_Defs {
     @When("the user clicks on existing Contact")
     public void the_user_clicks_on_existing_Contact() {
 
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(3);
         contactPage.existingContact.click();
 
     }
     @When("user clicks the three dots icon from top-right")
     public void user_clicks_the_three_dots_icon_from_top_right() {
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(3);
         contactPage.threeDots.click();
         BrowserUtils.waitFor(2);
+
     }
     @When("user clicks delete")
     public void user_clicks_delete() {
