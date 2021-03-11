@@ -15,7 +15,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user is logged in as \"Employee43\"",
@@ -25,7 +25,7 @@ formatter.match({
   "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Delete file",
@@ -45,7 +45,7 @@ formatter.match({
   "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_user_clicks_to_next_to_the_file_name(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user should be able to see following",
@@ -62,15 +62,17 @@ formatter.match({
   "location": "com.symund.step_definitions.ChangeStatusStepDefs.the_user_should_be_able_to_see_following(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user clicks Delete folder",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.symund.step_definitions.DeleteRestoreFolder_StepDefs.the_user_clicks_Delete_folder()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user clicks to \"Deleted files\" module on left navigation menu",
@@ -80,33 +82,41 @@ formatter.match({
   "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_user_clicks_to_module_on_left_navigation_menu(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the deleted folder shown inside Deleted Files tab",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.symund.step_definitions.DeleteRestoreFolder_StepDefs.the_deleted_folder_shown_inside_Deleted_Files_tab()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user clicks to Restore",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.symund.step_definitions.DeleteRestoreFolder_StepDefs.the_user_clicks_to_Restore()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "the restored folder shown inside All Files tab",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "com.symund.step_definitions.DeleteRestoreFolder_StepDefs.the_restored_folder_shown_inside_All_Files_tab()"
 });
+formatter.result({
+  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertTrue(Assert.java:53)\n\tat com.symund.step_definitions.DeleteRestoreFolder_StepDefs.the_restored_folder_shown_inside_All_Files_tab(DeleteRestoreFolder_StepDefs.java:39)\n\tat ✽.the restored folder shown inside All Files tab(file:///Users/zeynepozbek/Desktop/symund_automation1/src/test/resources/features/DeleteRestoreFolder.feature:17)\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });

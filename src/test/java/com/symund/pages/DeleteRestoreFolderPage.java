@@ -11,4 +11,8 @@ public class DeleteRestoreFolderPage extends BasePage{
     @FindBy(xpath = "//*[@*='filename']/a/span[3]/a[1]")
     public WebElement restore ;
 
+    @FindBy(xpath="(//*[@*='nametext'])[1]")
+
+    public WebElement RestoredFile;
+
 }

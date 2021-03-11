@@ -1,6 +1,7 @@
 package com.symund.step_definitions;
 
 import com.symund.pages.DeleteRestoreFolderPage;
+import com.symund.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -11,7 +12,12 @@ public class DeleteRestoreFolder_StepDefs {
 
     @Then("the user clicks Delete folder")
     public void the_user_clicks_Delete_folder() {
-    deleteRestoreFolderPage.FolderDeleted.click();
+
+        BrowserUtils.waitFor(3);
+
+    deleteRestoreFolderPage.deleteFolder.click();
+
+
 
     }
 
@@ -30,7 +36,7 @@ deleteRestoreFolderPage.restore.click();
     @Then("the restored folder shown inside All Files tab")
     public void the_restored_folder_shown_inside_All_Files_tab() {
 
-Assert.assertTrue(deleteRestoreFolderPage.);
+Assert.assertTrue(deleteRestoreFolderPage.RestoredFile.isDisplayed());
     }
 
 }
