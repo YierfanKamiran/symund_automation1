@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
+        "line": 5,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,30 +11,56 @@
         "steps": [
           {
             "result": {
+
+              "duration": 2165000,
+
               "duration": 6531139000,
+
               "status": "passed"
             },
-            "line": 5,
-            "name": "the user is logged in as \"Employee43\"",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+
+          },
+          {
+            "result": {
+              "duration": 5665492000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is logged in as \"Employee1\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Employee43\"",
+                  "val": "\"Employee1\"",
                   "offset": 25
                 }
               ],
               "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "And "
+
           }
         ]
       },
       {
+
+        "start_timestamp": "2021-03-11T12:27:07.812Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5727570000,
+
         "start_timestamp": "2021-03-04T16:10:48.916Z",
         "before": [
           {
             "result": {
               "duration": 6528503000,
+
               "status": "passed"
             },
             "match": {
@@ -42,6 +68,16 @@
             }
           }
         ],
+
+        "line": 10,
+        "name": "As a user, I should be able to Add a new contact -AC1",
+        "description": "",
+        "id": "create--modified--deleted-contacts;as-a-user--i-should-be-able-to-add-a-new-contact--ac1",
+        "after": [
+          {
+            "result": {
+              "duration": 128808000,
+
         "line": 8,
         "name": "Check details of File",
         "description": "",
@@ -50,6 +86,7 @@
           {
             "result": {
               "duration": 148251000,
+
               "status": "passed"
             },
             "match": {
@@ -62,6 +99,27 @@
         "steps": [
           {
             "result": {
+
+              "duration": 4293016000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user is on Contact Tab",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_is_on_Contact_Tab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3207638000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user clicks on New contact button",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_New_contact_button()"
+
               "duration": 3316583000,
               "status": "passed"
             },
@@ -120,11 +178,237 @@
             "name": "the user clicks Details",
             "match": {
               "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.the_user_clicks_Details()"
+
             },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4132569000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user provides the required information",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_provides_the_required_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Nejla Turk"
+                ]
+              },
+              {
+                "cells": [
+                  "Company",
+                  "HNS London Ltd"
+                ]
+              },
+              {
+                "cells": [
+                  "Title",
+                  "Vice Presedent"
+                ]
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "07428579933"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "nej@hotmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Address",
+                  "111 St. Giles Street"
+                ]
+              },
+              {
+                "cells": [
+                  "Postal Code",
+                  "NN1 1JW"
+                ]
+              },
+              {
+                "cells": [
+                  "City",
+                  "Northampton"
+                ]
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
+
+              "duration": 1007916000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "verify that a new contact is created",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.verify_that_a_new_contact_is_created(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Nejla Turk"
+                ]
+              },
+              {
+                "cells": [
+                  "Company",
+                  "HNS London Ltd"
+                ]
+              },
+              {
+                "cells": [
+                  "Title",
+                  "Vice Presedent"
+                ]
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "07428579933"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "nej@hotmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Address",
+                  "111 St. Giles Street"
+                ]
+              },
+              {
+                "cells": [
+                  "Postal Code",
+                  "NN1 1JW"
+                ]
+              },
+              {
+                "cells": [
+                  "City",
+                  "Northampton"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SYM-181"
+          },
+          {
+            "name": "@SYM-177"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 596000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18565863000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is logged in as \"Employee1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee1\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-11T12:27:32.049Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5127977000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "As a user, I should be able to modify the text fields -AC1",
+        "description": "",
+        "id": "create--modified--deleted-contacts;as-a-user--i-should-be-able-to-modify-the-text-fields--ac1",
+        "after": [
+          {
+            "result": {
+              "duration": 123198000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4144700000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "the user is on Contact Tab",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_is_on_Contact_Tab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1975186000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the user clicks on Name",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_Name()"
+
               "duration": 56224000,
               "status": "passed"
             },
@@ -150,11 +434,43 @@
                 }
               ],
               "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_user_clicks_to_module_on_left_navigation_menu(java.lang.String)"
+
             },
             "keyword": "When "
           },
           {
             "result": {
+
+              "duration": 3037778000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the user writes a new Name",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_writes_a_new_Name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1001571000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "verify that Name is modified",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.verify_that_Name_is_modified(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Mesut Turk"
+                ]
+              }
+            ],
+            "keyword": "Then "
+
               "duration": 41175000,
               "status": "passed"
             },
@@ -170,19 +486,27 @@
               "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_mark_should_be_displayed_next_to_file_name_in_All_files_page(java.lang.String)"
             },
             "keyword": "And "
+
           }
         ],
         "tags": [
           {
+
+            "name": "@SYM-181"
+          },
+          {
+            "name": "@SYM-178"
+
             "name": "@SYM-174"
           },
           {
             "name": "@wip"
+
           }
         ]
       },
       {
-        "line": 4,
+        "line": 5,
         "name": "",
         "description": "",
         "type": "background",
@@ -190,30 +514,54 @@
         "steps": [
           {
             "result": {
+
+              "duration": 333000,
+
               "duration": 7738396000,
+
               "status": "passed"
             },
-            "line": 5,
-            "name": "the user is logged in as \"Employee43\"",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18856488000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is logged in as \"Employee1\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Employee43\"",
+                  "val": "\"Employee1\"",
                   "offset": 25
                 }
               ],
               "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "And "
           }
         ]
       },
       {
+
+        "start_timestamp": "2021-03-11T12:28:06.035Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4946444000,
+
         "start_timestamp": "2021-03-04T16:11:11.254Z",
         "before": [
           {
             "result": {
               "duration": 5059646000,
+
               "status": "passed"
             },
             "match": {
@@ -221,6 +569,16 @@
             }
           }
         ],
+
+        "line": 41,
+        "name": "As a user, I should be able to delete the contact -AC1",
+        "description": "",
+        "id": "create--modified--deleted-contacts;as-a-user--i-should-be-able-to-delete-the-contact--ac1",
+        "after": [
+          {
+            "result": {
+              "duration": 113842000,
+
         "line": 14,
         "name": "Un-share file and folder",
         "description": "",
@@ -229,6 +587,7 @@
           {
             "result": {
               "duration": 133614000,
+
               "status": "passed"
             },
             "match": {
@@ -241,6 +600,15 @@
         "steps": [
           {
             "result": {
+
+              "duration": 4205587000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "the user is on Contact Tab",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_is_on_Contact_Tab()"
+
               "duration": 3185825000,
               "status": "passed"
             },
@@ -254,11 +622,45 @@
                 }
               ],
               "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_user_clicks_to_next_to_the_file_name(java.lang.String)"
+
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+
+              "duration": 2232638000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "the user clicks on existing Contact",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_existing_Contact()"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 4084538000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user clicks the three dots icon from top-right",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_clicks_the_three_dots_icon_from_top_right()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8075563000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user clicks delete",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_clicks_delete()"
+
               "duration": 120271000,
               "status": "passed"
             },
@@ -311,11 +713,125 @@
                 }
               ],
               "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_user_chooses_button(java.lang.String)"
+
             },
             "keyword": "And "
           },
           {
             "result": {
+
+              "duration": 198078000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "the contact will no longer be visible in the Contacts Tab",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_contact_will_no_longer_be_visible_in_the_Contacts_Tab()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SYM-181"
+          },
+          {
+            "name": "@SYM-179"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 499000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8655974000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is logged in as \"Employee1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee1\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-11T12:28:48.757Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3374723000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "As a user, I should be able to a new contact  be later on added to a group from the contact details -AC2",
+        "description": "",
+        "id": "create--modified--deleted-contacts;as-a-user--i-should-be-able-to-a-new-contact--be-later-on-added-to-a-group-from-the-contact-details--ac2",
+        "after": [
+          {
+            "result": {
+              "duration": 123000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4429582000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "the user is on Contact Tab",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_is_on_Contact_Tab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8087804000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user click on new or existing contact",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_click_on_new_existing_contact()"
+
               "duration": 2309136000,
               "status": "passed"
             },
@@ -329,11 +845,21 @@
                 }
               ],
               "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_user_clicks_to_module_on_left_navigation_menu(java.lang.String)"
+
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
+
+              "duration": 5607473000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user click on the Groups combobox",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_click_on_the_Groups_combobox()"
+
               "duration": 20008845000,
               "status": "passed"
             },
@@ -341,11 +867,33 @@
             "name": "the unshared file should disappear from Shares page",
             "match": {
               "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_unshared_file_should_disappear_from_Shares_page()"
+
             },
             "keyword": "Then "
           },
           {
             "result": {
+
+              "duration": 6079120000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user select groups from the lists",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_select_groups_from_the_lists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8572142000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "verify that added the group from the contact details",
+            "match": {
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.verify_that_added_the_group_from_the_contact_details()"
+
               "duration": 2148548000,
               "status": "passed"
             },
@@ -377,20 +925,38 @@
                 }
               ],
               "location": "com.symund.step_definitions.ShareUnshareFile_StepDefs.the_mark_should_be_disappeared_next_to_file_name_in_All_files_page(java.lang.String)"
+
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
+
+            "name": "@SYM-181"
+          },
+          {
+            "name": "@SYM-180"
+
             "name": "@SYM-175"
           },
           {
             "name": "@wip"
+
           }
         ]
       }
     ],
+
+    "name": "Create, modified, deleted contacts",
+    "description": "  A new contact could be created or an existing one could be modified/deleted",
+    "id": "create--modified--deleted-contacts",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Create_modified_deletedcontacts.feature",
+    "tags": [
+      {
+        "name": "@SYM-181",
+
     "name": "Share file/folder and un-share file/folder",
     "description": "",
     "id": "share-file/folder-and-un-share-file/folder",
@@ -399,6 +965,7 @@
     "tags": [
       {
         "name": "@DetailsFileFolder",
+
         "type": "Tag",
         "location": {
           "line": 1,
