@@ -1,11 +1,15 @@
+
 @contact
+
+
+
 Feature:  Set and change status
 
   Background:
     Given the user is logged in as "Employee100"
     When the user clicks to "Set status" option from Settings Menu
 
- @SYM-149  @SYM-150 @wip @set_status @set_time
+ @SYM-149  @SYM-150  @set_status @set_time
   Scenario: the user should be able to choose one status
     Then the user should see following status messages
       | In a meeting     |
@@ -35,7 +39,7 @@ Feature:  Set and change status
     When the user clicks to "Clear status message" button
     And "Set status" status message should be displayed in Settings Menu
 
- @SYM-148 @generic_status
+  @smoke @SYM-148 @generic_status
   Scenario: the user should be able to choose emoji and enter status message
     When the user clicks to emoji icon and chooses emoji "heart_eyes"
     And the user enters "Trying" into the status message input box

@@ -1,3 +1,4 @@
+
 Feature: Verify that user logs out Symund Successfully
   @logout
 
