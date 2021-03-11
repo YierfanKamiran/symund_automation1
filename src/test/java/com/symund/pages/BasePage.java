@@ -41,6 +41,56 @@ public class BasePage {
     @FindBy(linkText = "Set status")
     public WebElement setStatus;
 
+    @FindBy(xpath = "(//*[@class='fileactions'])[1]/a[1]")
+    public WebElement shareIcon;
+
+    @FindBy(xpath = "(//*[@class='fileactions'])[1]/a[2]")
+    public WebElement threeDotsMenu;
+
+    @FindBy(linkText = "Add to favourites")
+    public WebElement addToFavourites;
+
+    @FindBy(linkText = "Details")
+    public WebElement details;
+
+    @FindBy(linkText = "Rename")
+    public WebElement rename;
+
+    @FindBy(linkText = "Move or copy")
+    public WebElement moveOrCopy;
+
+    @FindBy(linkText = "Download")
+    public WebElement download;
+
+    @FindBy(linkText = "Delete folder")
+    public WebElement deleteFolder;
+
+    @FindBy(css = "[id='app-navigation']>ul>li>a")
+    public List<WebElement> leftNavigationMenuOptions;
+
+
+/**
+ * This method will navigate to All files, Recent, Favourites, Shares, Tags, deleted files modules
+ * @param moduleOption
+ */
+public void navigateToLeftModule(String moduleOption){
+
+    for (WebElement navigationOption : leftNavigationMenuOptions) {
+        if(moduleOption.equals(navigationOption.getText()))
+            navigationOption.click();
+    }
+}
+
+/**
+ * This method will click to "Share" or "Three dots-menu" next to file name
+ */
+     public void clickShareOrThreeDots(String option){
+         if(option.equalsIgnoreCase("Share icon")|| option.equalsIgnoreCase("Shared")){
+             shareIcon.click();
+         }else if(option.equalsIgnoreCase("Three dots")){
+             threeDotsMenu.click();
+         }
+     }
 
     /**
      * This method will navigate user to the specific tab
