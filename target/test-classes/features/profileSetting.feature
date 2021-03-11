@@ -32,8 +32,8 @@ Background:
 
       When the user enters information below
 
-        | Full name    | "£$%^                   |
-        | Email        | "£$%^&@cybertek.com     |
+        | Full name    | £$%                    |
+        | Email        | £$%^&@cybertek99.      |
         | Phone number | !!!"""56789             |
         | Address      | ()46 russel square wc126|
         | Website      | //https:MikeSmith.com.  |
