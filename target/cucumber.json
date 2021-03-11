@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 6,
+        "line": 5,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 41930000,
+              "duration": 1784000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "the user is on the login page",
             "match": {
               "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 5793213000,
+              "duration": 7127893000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "the user is logged in as \"Employee1\"",
             "match": {
               "arguments": [
@@ -42,11 +42,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-10T02:53:04.959Z",
+        "start_timestamp": "2021-03-11T01:54:25.207Z",
         "before": [
           {
             "result": {
-              "duration": 5431242000,
+              "duration": 7424208000,
               "status": "passed"
             },
             "match": {
@@ -54,14 +54,14 @@
             }
           }
         ],
-        "line": 11,
+        "line": 10,
         "name": "As a user, I should be able to Add a new contact -AC1",
         "description": "",
         "id": "create--modified--deleted-contacts;as-a-user--i-should-be-able-to-add-a-new-contact--ac1",
         "after": [
           {
             "result": {
-              "duration": 128773000,
+              "duration": 253271000,
               "status": "passed"
             },
             "match": {
@@ -74,10 +74,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4237931000,
+              "duration": 5257266000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 11,
             "name": "the user is on Contact Tab",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_is_on_Contact_Tab()"
@@ -86,10 +86,10 @@
           },
           {
             "result": {
-              "duration": 3220145000,
+              "duration": 3188845000,
               "status": "passed"
             },
-            "line": 14,
+            "line": 12,
             "name": "the user clicks on New contact button",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_New_contact_button()"
@@ -98,10 +98,10 @@
           },
           {
             "result": {
-              "duration": 4169418000,
+              "duration": 4274304000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 13,
             "name": "the user provides the required information",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_provides_the_required_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
@@ -160,10 +160,10 @@
           },
           {
             "result": {
-              "duration": 1006447000,
+              "duration": 1008091000,
               "status": "passed"
             },
-            "line": 24,
+            "line": 22,
             "name": "verify that a new contact is created",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.verify_that_a_new_contact_is_created(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
@@ -223,15 +223,15 @@
         ],
         "tags": [
           {
-            "name": "@necla"
+            "name": "@SYM-181"
           },
           {
-            "name": "@necla"
+            "name": "@SYM-177"
           }
         ]
       },
       {
-        "line": 6,
+        "line": 5,
         "name": "",
         "description": "",
         "type": "background",
@@ -239,10 +239,10 @@
         "steps": [
           {
             "result": {
-              "duration": 449000,
+              "duration": 488000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "the user is on the login page",
             "match": {
               "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
@@ -251,10 +251,10 @@
           },
           {
             "result": {
-              "duration": 10099298000,
+              "duration": 7567947000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "the user is logged in as \"Employee1\"",
             "match": {
               "arguments": [
@@ -270,11 +270,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-10T02:53:29.203Z",
+        "start_timestamp": "2021-03-11T01:54:53.821Z",
         "before": [
           {
             "result": {
-              "duration": 4276537000,
+              "duration": 5429807000,
               "status": "passed"
             },
             "match": {
@@ -282,14 +282,14 @@
             }
           }
         ],
-        "line": 35,
+        "line": 33,
         "name": "As a user, I should be able to modify the text fields -AC1",
         "description": "",
         "id": "create--modified--deleted-contacts;as-a-user--i-should-be-able-to-modify-the-text-fields--ac1",
         "after": [
           {
             "result": {
-              "duration": 134289000,
+              "duration": 133141000,
               "status": "passed"
             },
             "match": {
@@ -302,10 +302,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4373434000,
+              "duration": 4193209000,
               "status": "passed"
             },
-            "line": 36,
+            "line": 34,
             "name": "the user is on Contact Tab",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_is_on_Contact_Tab()"
@@ -314,10 +314,10 @@
           },
           {
             "result": {
-              "duration": 1517651000,
+              "duration": 1940524000,
               "status": "passed"
             },
-            "line": 37,
+            "line": 35,
             "name": "the user clicks on Name",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_Name()"
@@ -326,10 +326,10 @@
           },
           {
             "result": {
-              "duration": 3023678000,
+              "duration": 3025187000,
               "status": "passed"
             },
-            "line": 38,
+            "line": 36,
             "name": "the user writes a new Name",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_writes_a_new_Name()"
@@ -338,10 +338,10 @@
           },
           {
             "result": {
-              "duration": 1000943000,
+              "duration": 1006458000,
               "status": "passed"
             },
-            "line": 39,
+            "line": 37,
             "name": "verify that Name is modified",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.verify_that_Name_is_modified(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
@@ -359,15 +359,15 @@
         ],
         "tags": [
           {
-            "name": "@necla"
+            "name": "@SYM-181"
           },
           {
-            "name": "@necla"
+            "name": "@SYM-178"
           }
         ]
       },
       {
-        "line": 6,
+        "line": 5,
         "name": "",
         "description": "",
         "type": "background",
@@ -375,10 +375,10 @@
         "steps": [
           {
             "result": {
-              "duration": 340000,
+              "duration": 462000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "the user is on the login page",
             "match": {
               "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
@@ -387,10 +387,10 @@
           },
           {
             "result": {
-              "duration": 6448876000,
+              "duration": 6959611000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "the user is logged in as \"Employee1\"",
             "match": {
               "arguments": [
@@ -406,11 +406,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-10T02:53:53.650Z",
+        "start_timestamp": "2021-03-11T01:55:17.145Z",
         "before": [
           {
             "result": {
-              "duration": 4875093000,
+              "duration": 4986281000,
               "status": "passed"
             },
             "match": {
@@ -418,14 +418,14 @@
             }
           }
         ],
-        "line": 43,
+        "line": 41,
         "name": "As a user, I should be able to delete the contact -AC1",
         "description": "",
         "id": "create--modified--deleted-contacts;as-a-user--i-should-be-able-to-delete-the-contact--ac1",
         "after": [
           {
             "result": {
-              "duration": 374830000,
+              "duration": 149347000,
               "status": "passed"
             },
             "match": {
@@ -438,10 +438,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4175315000,
+              "duration": 16770823000,
               "status": "passed"
             },
-            "line": 44,
+            "line": 42,
             "name": "the user is on Contact Tab",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_is_on_Contact_Tab()"
@@ -450,10 +450,10 @@
           },
           {
             "result": {
-              "duration": 2074198000,
+              "duration": 2799621000,
               "status": "passed"
             },
-            "line": 45,
+            "line": 43,
             "name": "the user clicks on existing Contact",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_existing_Contact()"
@@ -462,10 +462,10 @@
           },
           {
             "result": {
-              "duration": 4078313000,
+              "duration": 4082090000,
               "status": "passed"
             },
-            "line": 46,
+            "line": 44,
             "name": "user clicks the three dots icon from top-right",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_clicks_the_three_dots_icon_from_top_right()"
@@ -474,10 +474,10 @@
           },
           {
             "result": {
-              "duration": 8073398000,
+              "duration": 8072014000,
               "status": "passed"
             },
-            "line": 47,
+            "line": 45,
             "name": "user clicks delete",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_clicks_delete()"
@@ -486,10 +486,10 @@
           },
           {
             "result": {
-              "duration": 219353000,
+              "duration": 285892000,
               "status": "passed"
             },
-            "line": 48,
+            "line": 46,
             "name": "the contact will no longer be visible in the Contacts Tab",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_contact_will_no_longer_be_visible_in_the_Contacts_Tab()"
@@ -499,15 +499,15 @@
         ],
         "tags": [
           {
-            "name": "@necla"
+            "name": "@SYM-181"
           },
           {
-            "name": "@necla1"
+            "name": "@SYM-179"
           }
         ]
       },
       {
-        "line": 6,
+        "line": 5,
         "name": "",
         "description": "",
         "type": "background",
@@ -515,10 +515,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1325000,
+              "duration": 492000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "the user is on the login page",
             "match": {
               "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
@@ -527,10 +527,10 @@
           },
           {
             "result": {
-              "duration": 5412528000,
+              "duration": 6994645000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "the user is logged in as \"Employee1\"",
             "match": {
               "arguments": [
@@ -546,11 +546,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-10T02:54:24.049Z",
+        "start_timestamp": "2021-03-11T01:56:01.264Z",
         "before": [
           {
             "result": {
-              "duration": 5208321000,
+              "duration": 4318084000,
               "status": "passed"
             },
             "match": {
@@ -558,14 +558,14 @@
             }
           }
         ],
-        "line": 51,
-        "name": "As a user, I should be able to a new contact  be later on added to a group",
-        "description": "  from the contact details -AC2",
-        "id": "create--modified--deleted-contacts;as-a-user--i-should-be-able-to-a-new-contact--be-later-on-added-to-a-group",
+        "line": 49,
+        "name": "As a user, I should be able to a new contact  be later on added to a group from the contact details -AC2",
+        "description": "",
+        "id": "create--modified--deleted-contacts;as-a-user--i-should-be-able-to-a-new-contact--be-later-on-added-to-a-group-from-the-contact-details--ac2",
         "after": [
           {
             "result": {
-              "duration": 127255000,
+              "duration": 166969000,
               "status": "passed"
             },
             "match": {
@@ -578,10 +578,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4126120000,
+              "duration": 4238887000,
               "status": "passed"
             },
-            "line": 53,
+            "line": 50,
             "name": "the user is on Contact Tab",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_is_on_Contact_Tab()"
@@ -590,35 +590,23 @@
           },
           {
             "result": {
-              "duration": 6609494000,
+              "duration": 8101165000,
               "status": "passed"
             },
-            "line": 54,
-            "name": "the user creates new a new group",
+            "line": 51,
+            "name": "user click on new or existing contact",
             "match": {
-              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_creates_new_a_new_group()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2075831000,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "the user clicks on existing Contact",
-            "match": {
-              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_existing_Contact()"
+              "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_click_on_new_existing_contact()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2053516000,
+              "duration": 4093617000,
               "status": "passed"
             },
-            "line": 56,
-            "name": "user click on the grouplists",
+            "line": 52,
+            "name": "user click on the Groups combobox",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_click_on_the_Groups_combobox()"
             },
@@ -626,11 +614,11 @@
           },
           {
             "result": {
-              "duration": 6083547000,
+              "duration": 2055154000,
               "status": "passed"
             },
-            "line": 57,
-            "name": "user select group from the lists",
+            "line": 53,
+            "name": "user select groups from the lists",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_select_groups_from_the_lists()"
             },
@@ -638,10 +626,10 @@
           },
           {
             "result": {
-              "duration": 336000,
+              "duration": 8699159000,
               "status": "passed"
             },
-            "line": 58,
+            "line": 54,
             "name": "verify that added the group from the contact details",
             "match": {
               "location": "com.symund.step_definitions.Create_Mod_Del_Defs.verify_that_added_the_group_from_the_contact_details()"
@@ -651,10 +639,10 @@
         ],
         "tags": [
           {
-            "name": "@necla"
+            "name": "@SYM-181"
           },
           {
-            "name": "@necla2"
+            "name": "@SYM-180"
           }
         ]
       }
@@ -666,7 +654,7 @@
     "uri": "file:src/test/resources/features/Create_modified_deletedcontacts.feature",
     "tags": [
       {
-        "name": "@necla",
+        "name": "@SYM-181",
         "type": "Tag",
         "location": {
           "line": 1,

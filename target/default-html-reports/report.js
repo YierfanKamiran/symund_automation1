@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@necla"
+      "name": "@SYM-181"
     }
   ]
 });
@@ -43,10 +43,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@necla"
+      "name": "@SYM-181"
     },
     {
-      "name": "@necla"
+      "name": "@SYM-177"
     }
   ]
 });
@@ -147,10 +147,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@necla"
+      "name": "@SYM-181"
     },
     {
-      "name": "@necla"
+      "name": "@SYM-178"
     }
   ]
 });
@@ -234,10 +234,10 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@necla"
+      "name": "@SYM-181"
     },
     {
-      "name": "@necla1"
+      "name": "@SYM-179"
     }
   ]
 });
@@ -323,15 +323,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "As a user, I should be able to a new contact  be later on added to a group",
-  "description": "  from the contact details -AC2",
+  "name": "As a user, I should be able to a new contact  be later on added to a group from the contact details -AC2",
+  "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@necla"
+      "name": "@SYM-181"
     },
     {
-      "name": "@necla2"
+      "name": "@SYM-180"
     }
   ]
 });
@@ -346,27 +346,17 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user creates new a new group",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_creates_new_a_new_group()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user clicks on existing Contact",
+  "name": "user click on new or existing contact",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.the_user_clicks_on_existing_Contact()"
+  "location": "com.symund.step_definitions.Create_Mod_Del_Defs.user_click_on_new_existing_contact()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click on the grouplists",
+  "name": "user click on the Groups combobox",
   "keyword": "Then "
 });
 formatter.match({
@@ -376,7 +366,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user select group from the lists",
+  "name": "user select groups from the lists",
   "keyword": "And "
 });
 formatter.match({

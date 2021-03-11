@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -99,45 +100,43 @@ public class Create_Mod_Del_Defs {
     @When("user clicks delete")
     public void user_clicks_delete() {
         BrowserUtils.waitFor(6);
-        contactPage.deleted.click();
+        contactPage.deletedName.click();
         BrowserUtils.waitFor(2);
     }
     @Then("the contact will no longer be visible in the Contacts Tab")
     public void the_contact_will_no_longer_be_visible_in_the_Contacts_Tab() {
         Assert.assertFalse("Deleted Succesfully", Driver.get().getPageSource().contains("Kedi Turk"));
-
+        System.out.println("Deleted name = " + contactPage);
     }
-
-    @Then("the user creates new a new group")
-    public void the_user_creates_new_a_new_group() {
-
-        contactPage.newgroupName.click();
-        BrowserUtils.waitFor(2);
-        contactPage.addGroupName.sendKeys("Group2");
-        BrowserUtils.waitFor(3);
-        JavascriptExecutor jse = (JavascriptExecutor) Driver.get();
-        jse.executeScript("arguments[0].click()", contactPage.rightClickArrow);
+    @When("user click on new or existing contact")
+    public void user_click_on_new_existing_contact() {
+        BrowserUtils.waitFor(4);
+        contactPage.getExistingContact.click();
+        BrowserUtils.waitFor(4);
     }
-
-    @When("user click on the grouplists")
+    @When("user click on the Groups combobox")
     public void user_click_on_the_Groups_combobox() {
         BrowserUtils.waitFor(2);
         contactPage.groups.click();
-
-    }
-    @Then("user select group from the lists")
-    public void user_select_groups_from_the_lists() {
         BrowserUtils.waitFor(2);
-        contactPage.selectGroup.click();
-        BrowserUtils.waitFor(4);
     }
-
+    @When("user select groups from the lists")
+    public void user_select_groups_from_the_lists() {
+        contactPage.garfish.click();
+        BrowserUtils.waitFor(2);
+    }
     @Then("verify that added the group from the contact details")
     public void verify_that_added_the_group_from_the_contact_details() {
-
-
-
+        contactPage.garfishUnderGroups.click();
+        BrowserUtils.waitFor(4);
+        List<String> list = new ArrayList<String>();
+        for(int i=1;i<contactPage.groupList.size();i++){
+            if(!contactPage.contactsInGroups.isDisplayed());
+            list.add(contactPage.groupList.get(i).getText());
+        }
+        System.out.println(list);
+        BrowserUtils.waitFor(4);
+        Assert.assertTrue(list.toString().contains("Nejla Turk"));
     }
-
 
 }

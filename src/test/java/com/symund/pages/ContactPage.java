@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class ContactPage extends BasePage{
 
 
@@ -78,6 +80,23 @@ public class ContactPage extends BasePage{
 
     @FindBy(xpath = "//*[@id='app-navigation-vue']/ul/li[4]/a")
     public WebElement selectGroup;
+
+    @FindBy(xpath="//div[@class='app-content-list-item-line-one' and contains(text(), 'Nejla Turk')]")
+    public WebElement getExistingContact1;
+    @FindBy(css="input[placeholder='Add contact in group']")
+    public WebElement groups1;
+    @FindBy(css="div[title='garfish']")
+    public WebElement garfish;
+    @FindBy(css="span[title='garfish']")
+    public WebElement garfishUnderGroups;
+    @FindBy(css="div[class='vue-recycle-scroller__item-view']")
+    public List<WebElement> groupList;
+    @FindBy(css="div[class='vue-recycle-scroller__item-view'][style='transform: translateY(-9999px);']")
+    public WebElement contactsInGroups;
+
+
+
+
 
 }
 

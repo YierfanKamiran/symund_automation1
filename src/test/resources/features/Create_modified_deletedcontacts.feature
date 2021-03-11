@@ -1,15 +1,13 @@
-@necla
+@SYM-181
 Feature: Create, modified, deleted contacts
-
   A new contact could be created or an existing one could be modified/deleted
 
   Background:
     Given the user is on the login page
     And the user is logged in as "Employee1"
 
-@necla
+@SYM-177
   Scenario: As a user, I should be able to Add a new contact -AC1
-
     Given the user is on Contact Tab
     When the user clicks on New contact button
     And the user provides the required information
@@ -21,17 +19,17 @@ Feature: Create, modified, deleted contacts
       |Address     |111 St. Giles Street |
       |Postal Code |NN1 1JW              |
       |City        |Northampton          |
- Then verify that a new contact is created
-   |Name        |Nejla Turk           |
-   |Company     |HNS London Ltd       |
-   |Title       |Vice Presedent       |
-   |Phone       |07428579933          |
-   |Email       |nej@hotmail.com      |
-   |Address     |111 St. Giles Street |
-   |Postal Code |NN1 1JW              |
-   |City        |Northampton          |
+    Then verify that a new contact is created
+      |Name        |Nejla Turk           |
+      |Company     |HNS London Ltd       |
+      |Title       |Vice Presedent       |
+      |Phone       |07428579933          |
+      |Email       |nej@hotmail.com      |
+      |Address     |111 St. Giles Street |
+      |Postal Code |NN1 1JW              |
+      |City        |Northampton          |
 
-  @necla
+  @SYM-178
   Scenario: As a user, I should be able to modify the text fields -AC1
     Given the user is on Contact Tab
     When the user clicks on Name
@@ -39,7 +37,7 @@ Feature: Create, modified, deleted contacts
     Then verify that Name is modified
       |Name        |Mesut Turk           |
 
-    @necla1
+  @SYM-179
   Scenario: As a user, I should be able to delete the contact -AC1
     Given the user is on Contact Tab
     When the user clicks on existing Contact
@@ -47,12 +45,10 @@ Feature: Create, modified, deleted contacts
     And user clicks delete
     Then the contact will no longer be visible in the Contacts Tab
 
- @necla2
-  Scenario: As a user, I should be able to a new contact  be later on added to a group
-  from the contact details -AC2
+ @SYM-180
+  Scenario: As a user, I should be able to a new contact  be later on added to a group from the contact details -AC2
     Given the user is on Contact Tab
-    Then the user creates new a new group
-    When the user clicks on existing Contact
-    Then user click on the grouplists
-    And user select group from the lists
+    When user click on new or existing contact
+    Then user click on the Groups combobox
+    And user select groups from the lists
     Then verify that added the group from the contact details
