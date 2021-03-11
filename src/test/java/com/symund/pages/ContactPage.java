@@ -16,7 +16,7 @@ public class ContactPage extends BasePage{
 @FindBy(css= "#new-contact-button")
     public WebElement newContactButton;
 
-@FindBy(css="#contact-fullname")
+@FindBy(xpath = "//*[@id='contact-fullname']")
      public WebElement name;
 
     @FindBy(css="#contact-org")
@@ -32,7 +32,7 @@ public class ContactPage extends BasePage{
     @FindBy(xpath="//input[@class='property__value'and @inputmode='email']")
     public WebElement email;
 
-    @FindBy(xpath="(//input[@class='property__value'and @type='text'])[4]")
+    @FindBy(xpath="/html/body/div[3]/main/div/div[2]/section/div[3]/div/div[3]/input")
     public WebElement address;
 
     @FindBy(xpath="(//input[@class='property__value'and @type='text'])[6]")

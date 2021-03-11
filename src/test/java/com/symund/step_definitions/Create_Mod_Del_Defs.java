@@ -122,6 +122,7 @@ public class Create_Mod_Del_Defs {
     }
     @When("user select groups from the lists")
     public void user_select_groups_from_the_lists() {
+        BrowserUtils.waitFor(4);
         contactPage.garfish.click();
         BrowserUtils.waitFor(2);
     }
