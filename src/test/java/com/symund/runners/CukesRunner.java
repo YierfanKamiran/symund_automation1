@@ -14,7 +14,12 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/symund/step_definitions",
         dryRun = false,
-        tags = "@Recent"
+
+        tags = "@SYM-181",
+        strict = true
+
+        tags = "@SYM-182 or @SYM-183"
+
 )
 public class CukesRunner {
 }

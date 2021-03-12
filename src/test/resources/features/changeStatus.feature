@@ -1,4 +1,6 @@
 
+@contact
+
 Feature:  Set and change status
 
   Background:
