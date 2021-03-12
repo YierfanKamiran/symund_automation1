@@ -39,8 +39,14 @@ public class RecentUploadedFiles_StepDefs {
 
 
     @Then("the users should see {string} is displayed in recent page")
-    public void theUsersShouldSeeIsDisplayedInRecentPage(String expectedfile) {
-        Assert.assertEquals(expectedfile,recentUploadedFilesPage.filenameinrecent.getText());
+    public void theUsersShouldSeeIsDisplayedInRecentPage(String folder) {
+        BrowserUtils.waitFor(3);
+        Assert.assertTrue(recentUploadedFilesPage.myFile.isDisplayed());
+        BrowserUtils.waitFor(3);
+
+        recentUploadedFilesPage.recentthreedots.click();
+        BrowserUtils.waitFor(3);
+        recentUploadedFilesPage.deleteFileInRecent.click();
     }
 
     @And("the user clicks new folder button")
@@ -57,19 +63,27 @@ public class RecentUploadedFiles_StepDefs {
 
     @And("the user enter a {string} in for new folder and clicks arrow")
     public void theUserEnterAInForNewFolderAndClicksArrow(String name) {
-    recentUploadedFilesPage.newfolderinbox.sendKeys("Evrim");
+    recentUploadedFilesPage.newfolderinbox.sendKeys("evrim");
     recentUploadedFilesPage.newfolderarrow.click();
     BrowserUtils.waitFor(5);
 
     }
 
-    @Then("the created folder is displayed in recent page")
-    public void the_created_folder_is_displayed_in_recent_page() {
-
+    @Then("the created file is displayed in recent page")
+    public void the_created_file_is_displayed_in_recent_page() {
+        BrowserUtils.waitFor(3);
+        //  @Then("the uploaded {string} should be displayed in Recent page")
+      //  public void the_uploaded_should_be_displayed_in_Recent_page(String file) {
+            String actualFolder = recentUploadedFilesPage.recentfile.getText();
+            Assert.assertEquals(actualFolder,recentUploadedFilesPage.recentfile.getText());
+            BrowserUtils.waitFor(2);
+            recentUploadedFilesPage.recentthreedots.click();
+            BrowserUtils.waitFor(2);
+            recentUploadedFilesPage.deleteFileInRecent.click();
 
     }
 
-    @When("the user clears the text input box")
+        @When("the user clears the text input box")
     public void the_user_clears_the_text_input_box() {
 
     }
@@ -100,4 +114,7 @@ public class RecentUploadedFiles_StepDefs {
     }
 
 
+    @Then("the created text text is displayed in recent tab")
+    public void theCreatedTextTextIsDisplayedInRecentTab() {
+    }
 }

@@ -36,6 +36,21 @@ public class RecentUploadedFilesPage<Webelement> extends BasePage {
              public WebElement filenameinrecent;
 
 
+    @FindBy(xpath = "//*[@id='fileList']/tr[1]/td[1]/a/span[1]")
+    public WebElement myFile;
+
+    @FindBy(xpath = "(//*[@*='action action-menu permanent'])[3]")
+    public WebElement recentthreedots;
+
+    @FindBy(linkText = "Delete file")
+    public WebElement deleteFileInRecent;
+
+    @FindBy (xpath = "(//*[@*='nametext'])[2]")
+    public WebElement recentfile;
+
+    @FindBy (xpath = "(//*[@*='action action-menu permanent'][1]")
+            public WebElement filethreedots;
+
 
 
 
