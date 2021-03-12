@@ -1,4 +1,4 @@
- @Upload
+@smoke  @Upload
 Feature: the user should be able to upload
 
   @SYM-159
