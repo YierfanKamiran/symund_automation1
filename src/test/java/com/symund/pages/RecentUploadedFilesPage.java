@@ -48,10 +48,26 @@ public class RecentUploadedFilesPage<Webelement> extends BasePage {
     @FindBy (xpath = "(//*[@*='nametext'])[2]")
     public WebElement recentfile;
 
-    @FindBy (xpath = "(//*[@*='action action-menu permanent'][1]")
+    @FindBy (xpath = "(//*[@*='action action-menu permanent'][2]")
             public WebElement filethreedots;
 
+@FindBy(linkText =  "Delete folder")
+public WebElement deleteFolderInRecent;
 
+@FindBy(xpath = ("//*[@id='controls']/div[2]/div[2]/ul/li[3]/a/span[2]"))
+        public WebElement newTextDocument;
+
+@FindBy(css = "#view13-input-file")
+public WebElement newTextInputbox;
+
+@FindBy(xpath = "//*[@id='viewer-content']/div[1]/div[2]/button")
+public WebElement xButton;
+
+@FindBy(xpath = "//*[@id='fileList']/tr[1]/td[1]/a/span[1]")
+public WebElement fileTextName;
+
+@FindBy(xpath = "(//*[@*='action action-menu permanent'])[3]")
+    public WebElement fileThreeDts;
 
 
 public void clearinputboxes(){

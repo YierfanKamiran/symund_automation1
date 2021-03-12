@@ -12,7 +12,7 @@ Background:
     When the user clicks to "Recent"
     Then the users should see "folder" is displayed in recent page
 
-  @Recent
+
   Scenario:create a new folder to be seen recent tab
       And the user clicks new folder button
       And the user clear the input box
@@ -20,16 +20,13 @@ Background:
       When the user clicks to "Recent"
       Then the created file is displayed in recent page
 
-
+  @Recent
   Scenario: create a document to be seen recent tab
-    And the user clicks New text document
-    And the user clears the text input box
-    And the user enter a "name" in for new folder and clicks arrow
-    And the user write something than clicks exit
-    When the user clicks the created text documents
+    And the user clicks New text document box
+    And the user enter a "name" in for new text and clicks arrow
     Then the user should be able to see the text and click exit
-    And the user clicks to "Recent"
-    Then the created text text is displayed in recent tab
+    When the user clicks to "Recent"
+    Then the created text  is displayed in recent tab
 
 
 

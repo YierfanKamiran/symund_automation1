@@ -79,42 +79,52 @@ public class RecentUploadedFiles_StepDefs {
             BrowserUtils.waitFor(2);
             recentUploadedFilesPage.recentthreedots.click();
             BrowserUtils.waitFor(2);
-            recentUploadedFilesPage.deleteFileInRecent.click();
+            recentUploadedFilesPage.deleteFolderInRecent.click();
 
     }
 
-        @When("the user clears the text input box")
-    public void the_user_clears_the_text_input_box() {
-
+    @And("the user clicks New text document box")
+    public void theUserClicksNewTextDocumentBox() {
+        recentUploadedFilesPage.newTextDocument.click();
+        BrowserUtils.waitFor(2);
     }
 
-    @When("the user enter a text documents and clicks arrow")
-    public void the_user_enter_a_text_documents_and_clicks_arrow() {
+     //   @When("the user clears the text input box")
+   // public void the_user_clears_the_text_input_box() {
+    // recentUploadedFilesPage.newTextInputbox.clear();
+    // BrowserUtils.waitFor(2);
+   // }
+
+    @And("the user enter a {string} in for new text and clicks arrow")
+    public void theUserEnterAInForNewTextAndClicksArrow(String name) {
+recentUploadedFilesPage.newTextInputbox.sendKeys("evrim");
+recentUploadedFilesPage.newfolderarrow.click();
+BrowserUtils.waitFor(3);
 
     }
-
-    @When("the user write something than clicks exit")
-    public void the_user_write_something_than_clicks_exit() {
-
-    }
-
-    @When("the user clicks the created text documents")
-    public void the_user_clicks_the_created_text_documents() {
-
-    }
-
     @Then("the user should be able to see the text and click exit")
     public void the_user_should_be_able_to_see_the_text_and_click_exit() {
+    recentUploadedFilesPage.xButton.click();
+    BrowserUtils.waitFor(3);
+    }
+
+    @Then("the created text  is displayed in recent tab")
+    public void the_created_text_is_displayed_in_recent_tab() {
+        String actualText = recentUploadedFilesPage.fileTextName.getText();
+        System.out.println(actualText + " ");
+        Assert.assertEquals(actualText,recentUploadedFilesPage.fileTextName.getText());
+        BrowserUtils.waitFor(2);
+        recentUploadedFilesPage.fileThreeDts.click();
+        BrowserUtils.waitFor(3);
+        recentUploadedFilesPage.deleteFileInRecent.click();
+        //recentUploadedFilesPage.allFilesTab.click();
+
 
     }
 
-    @Then("the created text documents is displayed in recent tab")
-    public void the_created_text_documents_is_displayed_in_recent_tab() {
 
     }
 
 
-    @Then("the created text text is displayed in recent tab")
-    public void theCreatedTextTextIsDisplayedInRecentTab() {
-    }
-}
+
+
