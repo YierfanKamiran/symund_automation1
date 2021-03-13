@@ -14,4 +14,5 @@ Feature: Delete and restore file
     When the user clicks to "Deleted files" module on left navigation menu
     Then the deleted folder shown inside Deleted Files tab
     When the user clicks to Restore
+    And the user clicks to Symund logo
     Then the restored folder shown inside All Files tab

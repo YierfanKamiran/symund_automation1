@@ -105,6 +105,16 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
+  "name": "the user clicks to Symund logo",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "the restored folder shown inside All Files tab",
   "keyword": "Then "
 });
@@ -112,10 +122,8 @@ formatter.match({
   "location": "com.symund.step_definitions.DeleteRestoreFolder_StepDefs.the_restored_folder_shown_inside_All_Files_tab()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertTrue(Assert.java:53)\n\tat com.symund.step_definitions.DeleteRestoreFolder_StepDefs.the_restored_folder_shown_inside_All_Files_tab(DeleteRestoreFolder_StepDefs.java:39)\n\tat ✽.the restored folder shown inside All Files tab(file:///Users/zeynepozbek/Desktop/symund_automation1/src/test/resources/features/DeleteRestoreFolder.feature:17)\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

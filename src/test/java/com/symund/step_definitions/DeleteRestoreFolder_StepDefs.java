@@ -23,18 +23,24 @@ public class DeleteRestoreFolder_StepDefs {
 
     @Then("the deleted folder shown inside Deleted Files tab")
     public void the_deleted_folder_shown_inside_Deleted_Files_tab() {
+
+        BrowserUtils.waitFor(3);
         Assert.assertTrue(deleteRestoreFolderPage.FolderDeleted.isDisplayed());
 
     }
 
     @When("the user clicks to Restore")
     public void the_user_clicks_to_Restore() {
+        BrowserUtils.waitFor(3);
+
 deleteRestoreFolderPage.restore.click();
 
     }
 
     @Then("the restored folder shown inside All Files tab")
     public void the_restored_folder_shown_inside_All_Files_tab() {
+
+        BrowserUtils.waitFor(3);
 
 Assert.assertTrue(deleteRestoreFolderPage.RestoredFile.isDisplayed());
     }
