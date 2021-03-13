@@ -72,15 +72,14 @@ public class RecentUploadedFiles_StepDefs {
     @Then("the created file is displayed in recent page")
     public void the_created_file_is_displayed_in_recent_page() {
         BrowserUtils.waitFor(3);
-        //  @Then("the uploaded {string} should be displayed in Recent page")
-      //  public void the_uploaded_should_be_displayed_in_Recent_page(String file) {
+
             String actualFolder = recentUploadedFilesPage.recentfile.getText();
             Assert.assertEquals(actualFolder,recentUploadedFilesPage.recentfile.getText());
             BrowserUtils.waitFor(2);
             recentUploadedFilesPage.recentthreedots.click();
-            BrowserUtils.waitFor(2);
+            BrowserUtils.waitFor(5);
             recentUploadedFilesPage.deleteFolderInRecent.click();
-
+            BrowserUtils.waitFor(5);
     }
 
     @And("the user clicks New text document box")
@@ -89,15 +88,12 @@ public class RecentUploadedFiles_StepDefs {
         BrowserUtils.waitFor(2);
     }
 
-     //   @When("the user clears the text input box")
-   // public void the_user_clears_the_text_input_box() {
-    // recentUploadedFilesPage.newTextInputbox.clear();
-    // BrowserUtils.waitFor(2);
-   // }
+
 
     @And("the user enter a {string} in for new text and clicks arrow")
     public void theUserEnterAInForNewTextAndClicksArrow(String name) {
 recentUploadedFilesPage.newTextInputbox.sendKeys("evrim");
+BrowserUtils.waitFor(2);
 recentUploadedFilesPage.newfolderarrow.click();
 BrowserUtils.waitFor(3);
 
@@ -117,9 +113,7 @@ BrowserUtils.waitFor(3);
         recentUploadedFilesPage.fileThreeDts.click();
         BrowserUtils.waitFor(3);
         recentUploadedFilesPage.deleteFileInRecent.click();
-        //recentUploadedFilesPage.allFilesTab.click();
-
-
+        BrowserUtils.waitFor(5);
     }
 
 

@@ -1,10 +1,10 @@
 
-
-
+@Recent
 Feature: the user should be able to see recently uploaded/created file(s) or folder under Recent tab
 Background:
   Given the user is logged in as "Employee1"
   Then the user clicks plus sign
+
 
 
   Scenario: upload a file to be seen recent tab
@@ -20,7 +20,7 @@ Background:
       When the user clicks to "Recent"
       Then the created file is displayed in recent page
 
-  @Recent
+
   Scenario: create a document to be seen recent tab
     And the user clicks New text document box
     And the user enter a "name" in for new text and clicks arrow
