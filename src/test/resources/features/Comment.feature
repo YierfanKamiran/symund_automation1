@@ -30,3 +30,4 @@ Feature: Comment Box Functions
     Then the user clicks dots next to user name
     And the user clicks Delete comment button
     And verify that the comment is deleted
+
