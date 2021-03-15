@@ -63,7 +63,7 @@ public class BasePage {
     public WebElement download;
 
     @FindBy(linkText = "Delete folder")
-    public WebElement deleteFolder;
+    public WebElement   deleteFolder;
 
     @FindBy(css = "[id='app-navigation']>ul>li>a")
     public List<WebElement> leftNavigationMenuOptions;

@@ -20,4 +20,18 @@ public class CommentsPage {
     public WebElement ActualUsername;
     @FindBy(xpath = "(//div[.='Employee23'])[1]")
     public WebElement ExpectedUsername;
+    @FindBy(xpath = "(//li[@class='comment']//a[@class='action more icon icon-more has-tooltip'])[1]")
+    public WebElement dotsNextToUsername;
+    @FindBy(linkText = "Edit comment")
+    public WebElement EditBtn;
+    @FindBy(linkText = "Delete comment")
+    public WebElement DeleteBtn;
+    @FindBy(xpath = "(//div[@data-placeholder='New comment …'])[2]")
+    public WebElement CommentBoxEdit;
+    @FindBy(xpath = "(//div[@class='message'])[2]")
+    public WebElement EditedMessage;
+    @FindBy(xpath = "(//input[@type='submit'])[3]")
+    public WebElement ArrowBtn1;
+    @FindBy(xpath = "(//ul[@class='comments']//li//div[@class='message'])[1]")
+    public WebElement newEdited;
 }

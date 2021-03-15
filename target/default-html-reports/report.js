@@ -63,7 +63,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "A comment box should be displayed",
+  "name": "the user should be able to comment",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -73,41 +73,41 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user clicks dots for comments",
+  "name": "the user enters comment \"I am angry at you\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.CommentStepDefs.theUserClicksDotsForComments()"
+  "location": "com.symund.step_definitions.CommentStepDefs.theUserEntersComment(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks Details",
+  "name": "the user clicks comment arrow button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.the_user_clicks_Details()"
+  "location": "com.symund.step_definitions.CommentStepDefs.theUserClicksCommentArrowButton()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks comments",
+  "name": "the user\u0027s username should be seen",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.CommentStepDefs.theUserClicksComments()"
+  "location": "com.symund.step_definitions.CommentStepDefs.theUserSUsernameShouldBeSeen()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the comments box should be displayed",
-  "keyword": "Then "
+  "name": "the box is emptied for new comment",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.CommentStepDefs.theCommentsBoxShouldBeDisplayed()"
+  "location": "com.symund.step_definitions.CommentStepDefs.theBoxIsEmptiedForNewComment()"
 });
 formatter.result({
   "status": "passed"
@@ -174,7 +174,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "the user should be able to comment",
+  "name": "the user should be edit and delete the comment",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -184,18 +184,38 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user enters comment \"I love you \"",
+  "name": "the user clicks dots next to user name",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.CommentStepDefs.theUserEntersComment(java.lang.String)"
+  "location": "com.symund.step_definitions.CommentStepDefs.the_user_clicks_dots_next_to_user_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks Edit comment",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.CommentStepDefs.the_user_clicks_Edit_comment()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user deletes the old comment and writes \"i like you actually\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.CommentStepDefs.the_user_deletes_the_old_comment_and_writes_new_one(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
   "name": "the user clicks comment arrow button",
-  "keyword": "And "
+  "keyword": "Then "
 });
 formatter.match({
   "location": "com.symund.step_definitions.CommentStepDefs.theUserClicksCommentArrowButton()"
@@ -204,21 +224,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user\u0027s username should be seen",
-  "keyword": "And "
+  "name": "verify that the comment is edited",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.CommentStepDefs.theUserSUsernameShouldBeSeen()"
+  "location": "com.symund.step_definitions.CommentStepDefs.verify_that_the_comment_is_edited()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the box is emptied for new comment",
+  "name": "the user clicks dots next to user name",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.CommentStepDefs.the_user_clicks_dots_next_to_user_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks Delete comment button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.CommentStepDefs.theBoxIsEmptiedForNewComment()"
+  "location": "com.symund.step_definitions.CommentStepDefs.the_user_clicks_Delete_comment_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "verify that the comment is deleted",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.symund.step_definitions.CommentStepDefs.verifyThatTheCommentIsDeleted()"
 });
 formatter.result({
   "status": "passed"
