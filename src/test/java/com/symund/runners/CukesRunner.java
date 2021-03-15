@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         glue = "com/symund/step_definitions",
         dryRun = false,
         strict = true,
-        tags = "@smoke"
+        tags = "@Recent"
 
 )
 public class CukesRunner {
