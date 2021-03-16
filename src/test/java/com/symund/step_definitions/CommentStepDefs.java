@@ -45,6 +45,7 @@ public class CommentStepDefs {
         Assert.assertEquals(commentsPage.ExpectedUsername.getText(), commentsPage.ActualUsername.getText());
         System.out.println(commentsPage.ExpectedUsername.getText());
         System.out.println(commentsPage.ActualUsername.getText());
+        //
 
         commentsPage.ExpectedUsername.isDisplayed();
 
