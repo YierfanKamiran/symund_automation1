@@ -2,12 +2,10 @@ package com.symund.step_definitions;
 
 import com.symund.pages.CommentsPage;
 import com.symund.utilities.BrowserUtils;
-import com.symund.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
 
 public class CommentStepDefs {
     CommentsPage commentsPage = new CommentsPage();
@@ -46,8 +44,6 @@ public class CommentStepDefs {
         System.out.println(commentsPage.ExpectedUsername.getText());
         System.out.println(commentsPage.ActualUsername.getText());
         commentsPage.ExpectedUsername.isDisplayed();
-        //be careful
-        // just
 
     }
 
