@@ -12,6 +12,7 @@ import org.openqa.selenium.JavascriptExecutor;
 public class CommentStepDefs {
     CommentsPage commentsPage = new CommentsPage();
     public static String commentInput;
+    //
 
     @Given("the user clicks dots for comments")
     public void theUserClicksDotsForComments() {
