@@ -20,6 +20,7 @@ public class CommentStepDefs {
     @And("the user clicks comments")
     public void theUserClicksComments() {
         commentsPage.CommentBtn.click();
+        //
     }
 
     @Then("the comments box should be displayed")
