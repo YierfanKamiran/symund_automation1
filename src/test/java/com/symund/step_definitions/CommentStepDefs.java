@@ -47,6 +47,7 @@ public class CommentStepDefs {
         System.out.println(commentsPage.ActualUsername.getText());
         commentsPage.ExpectedUsername.isDisplayed();
         //be careful
+        // just
 
     }
 
