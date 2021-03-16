@@ -1,4 +1,4 @@
-@DetailsFileFolder
+@smoke @DetailsFileFolder
 Feature: Details File and Folder
 
   Background:

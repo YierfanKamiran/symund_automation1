@@ -2,6 +2,7 @@ package com.symund.pages;
 
 import com.symund.utilities.BrowserUtils;
 import com.symund.utilities.Driver;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,6 +14,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
 public class BasePage {
+
+
     public BasePage() {
         PageFactory.initElements(Driver.get(), this);
     }

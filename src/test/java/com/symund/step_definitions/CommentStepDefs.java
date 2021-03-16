@@ -2,14 +2,17 @@ package com.symund.step_definitions;
 
 import com.symund.pages.CommentsPage;
 import com.symund.utilities.BrowserUtils;
+import com.symund.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class CommentStepDefs {
     CommentsPage commentsPage = new CommentsPage();
     public static String commentInput;
+    //
 
     @Given("the user clicks dots for comments")
     public void theUserClicksDotsForComments() {
@@ -20,7 +23,6 @@ public class CommentStepDefs {
     @And("the user clicks comments")
     public void theUserClicksComments() {
         commentsPage.CommentBtn.click();
-        //
     }
 
     @Then("the comments box should be displayed")
@@ -44,6 +46,7 @@ public class CommentStepDefs {
         Assert.assertEquals(commentsPage.ExpectedUsername.getText(), commentsPage.ActualUsername.getText());
         System.out.println(commentsPage.ExpectedUsername.getText());
         System.out.println(commentsPage.ActualUsername.getText());
+
         commentsPage.ExpectedUsername.isDisplayed();
 
     }
