@@ -119,11 +119,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks Details",
+  "name": "the user clicks Delete folder",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.the_user_clicks_Details()"
+  "location": "com.symund.step_definitions.DeleteRestoreFolder_StepDefs.the_user_clicks_Delete_folder()"
 });
 formatter.result({
   "status": "passed"
@@ -198,23 +198,12 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
   "name": "the user is logged in as \"Employee1\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
+  "location": "com.symund.step_definitions.DeleteRestoreFolder_StepDefs.the_deleted_folder_shown_inside_Deleted_Files_tab()"
 });
 formatter.result({
   "status": "passed"
@@ -331,11 +320,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks Details",
+  "name": "the user clicks to Symund logo",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.symund.step_definitions.DetailsFileFolder_StepDefs.the_user_clicks_Details()"
+  "location": "com.symund.step_definitions.NavigateHomePage_StepDefs.the_user_clicks_to_Symund_logo()"
 });
 formatter.result({
   "status": "passed"

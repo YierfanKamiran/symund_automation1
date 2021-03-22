@@ -47,4 +47,8 @@ public class LoginStepDefs {
         String currentUrl = Driver.get().getCurrentUrl();
         Assert.assertNotEquals(expectedUrl,currentUrl);
     }
+
+    @Given("that user is on the homepage")
+    public void thatUserIsOnTheHomepage() {
+    }
 }
