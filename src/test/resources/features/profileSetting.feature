@@ -1,5 +1,5 @@
 
-@SYM-162 @profile
+@smoke @SYM-162 @profile
 Feature:
 
 Background:
