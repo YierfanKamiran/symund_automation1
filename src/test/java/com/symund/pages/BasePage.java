@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class BasePage {
 
@@ -26,8 +27,8 @@ public class BasePage {
     @FindBy(css = "#appmenu>li")
     public List<WebElement> menuOptions;
 
-    @FindBy(linkText = "Files")
-    public WebElement allFilesTab;
+//    @FindBy(linkText = "Files")
+//    public WebElement allFilesTab;
 
     @FindBy(css = "#settings>div>div")
     public WebElement settingsMenu;
@@ -149,6 +150,21 @@ public void navigateToLeftModule(String moduleOption){
                     Driver.get().findElement(By.xpath("//input[@class='icon-confirm']")).click();
             }
         }
+
+        //(//tbody[@id='fileList'])[1]/tr[@data-file='sample_file.docx']/td[2]/a/span[2]/a[2]
+
+    public void clickThreeDots(String fileName){
+
+        try{
+            Driver.get().findElement(By.xpath("(//tbody[@id='fileList'])[1]/tr[@data-file='"+fileName+
+                    "']/td[2]/a/span[2]/a[2]")).click();
+        }catch(NoSuchElementException e){
+            e.printStackTrace();
+        }
+
+
+
+    }
     }
 
 

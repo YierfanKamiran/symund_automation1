@@ -6,13 +6,13 @@ Background:
   Then the user clicks plus sign
 
 
-
+@SYM-173 @wip
   Scenario: upload a file to be seen recent tab
     And the user clicks Upload file button and choose the file to upload
     When the user clicks to "Recent"
     Then the users should see "folder" is displayed in recent page
 
-
+@SYM-192 @wip
   Scenario:create a new folder to be seen recent tab
       And the user clicks new folder button
       And the user clear the input box
@@ -20,8 +20,8 @@ Background:
       When the user clicks to "Recent"
       Then the created file is displayed in recent page
 
-
-  Scenario: create a document to be seen recent tab
+   @SYM-194 @wip
+    Scenario: create a document to be seen recent tab
     And the user clicks New text document box
     And the user enter a "name" in for new text and clicks arrow
     Then the user should be able to see the text and click exit
