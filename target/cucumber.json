@@ -1,9 +1,9 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,42 +11,30 @@
         "steps": [
           {
             "result": {
-              "duration": 15750000000,
+              "duration": 5805316000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "the user is logged in as \"Employee43\"",
+            "line": 5,
+            "name": "the user is logged in as \"Employee199\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Employee1\"",
+                  "val": "\"Employee199\"",
                   "offset": 25
                 }
               ],
               "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 97754600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user clicks plus sign",
-            "match": {
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUserClicksPlusSign()"
-            },
-            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-13T15:52:09.890Z",
+        "start_timestamp": "2021-03-23T22:52:40.273Z",
         "before": [
           {
             "result": {
-              "duration": 6253426800,
+              "duration": 6680119000,
               "status": "passed"
             },
             "match": {
@@ -54,14 +42,14 @@
             }
           }
         ],
-        "line": 10,
-        "name": "upload a file to be seen recent tab",
+        "line": 7,
+        "name": "Add file to favorites page",
         "description": "",
-        "id": "the-user-should-be-able-to-see-recently-uploaded/created-file(s)-or-folder-under-recent-tab;upload-a-file-to-be-seen-recent-tab",
+        "id": "add-and-remove-file-to-favourites;add-file-to-favorites-page",
         "after": [
           {
             "result": {
-              "duration": 774658100,
+              "duration": 163951000,
               "status": "passed"
             },
             "match": {
@@ -74,56 +62,84 @@
         "steps": [
           {
             "result": {
-              "duration": 5067520800,
+              "duration": 2181826000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user clicks to \"three dots\" next to the \"sample_file.docx\" name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"three dots\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"sample_file.docx\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.symund.step_definitions.AddRemoveFileFavouriteStepDefs.the_user_clicks_to_next_to_the_name(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2133107000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user chooses \"Add to favourites\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add to favourites\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.symund.step_definitions.AddRemoveFileFavouriteStepDefs.the_user_chooses(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1277420000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks to \"Favourites\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Favourites\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.symund.step_definitions.AddRemoveFileFavouriteStepDefs.the_user_clicks_to_tab(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42279000,
               "status": "passed"
             },
             "line": 11,
-            "name": "the user clicks Upload file button and choose the file to upload",
-            "match": {
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUserClicksUploadFileButtonAndChooseTheFileToUpload()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5241497600,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the user clicks to \"Recent\"",
+            "name": "the \"sample_file.docx\" should appear in the Favorites page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Recent\"",
-                  "offset": 19
+                  "val": "\"sample_file.docx\"",
+                  "offset": 4
                 }
               ],
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUserClicksTo(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 9304563000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the users should see \"folder\" is displayed in recent page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"folder\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUsersShouldSeeIsDisplayedInRecentPage(java.lang.String)"
+              "location": "com.symund.step_definitions.AddRemoveFileFavouriteStepDefs.the_should_appear_in_the_Favorites_page(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Recent"
+            "name": "@SYM-167"
           }
         ]
       },
@@ -136,309 +152,128 @@
         "steps": [
           {
             "result": {
-              "duration": 5281502200,
+              "duration": 15344216000,
               "status": "passed"
             },
             "line": 5,
-            "name": "the user is logged in as \"Employee1\"",
+            "name": "the user is logged in as \"Employee199\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Employee1\"",
+                  "val": "\"Employee199\"",
                   "offset": 25
                 }
               ],
               "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 96235700,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user clicks plus sign",
-            "match": {
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUserClicksPlusSign()"
-            },
-            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-13T15:52:42.359Z",
+        "start_timestamp": "2021-03-23T22:52:58.739Z",
         "before": [
           {
             "result": {
-              "duration": 5203649500,
+              "duration": 5480758000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Remove file from favourites",
+        "description": "",
+        "id": "add-and-remove-file-to-favourites;remove-file-from-favourites",
+        "after": [
+          {
+            "result": {
+              "duration": 227182000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2424485000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user clicks to three dots next to the \"sample_file.docx\" name to remove",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sample_file.docx\"",
+                  "offset": 42
+                }
+              ],
+              "location": "com.symund.step_definitions.AddRemoveFileFavouriteStepDefs.the_user_clicks_to_three_dots_to_the_name_to_remove(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1322745000,
               "status": "passed"
             },
             "line": 16,
-            "name": "the user clicks to Restore",
+            "name": "the user clicks to \"Favourites\" tab",
             "match": {
-              "location": "com.symund.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "create a new folder to be seen recent tab",
-        "description": "",
-        "id": "the-user-should-be-able-to-see-recently-uploaded/created-file(s)-or-folder-under-recent-tab;create-a-new-folder-to-be-seen-recent-tab",
-        "after": [
-          {
-            "result": {
-              "duration": 824454800,
-              "status": "passed"
+              "arguments": [
+                {
+                  "val": "\"Favourites\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.symund.step_definitions.AddRemoveFileFavouriteStepDefs.the_user_clicks_to_tab(java.lang.String)"
             },
-            "match": {
-              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 3070827700,
+              "duration": 20037238000,
               "status": "passed"
             },
             "line": 17,
-            "name": "the user clicks new folder button",
-            "match": {
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUserClicksNewFolderButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2060268100,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the user clear the input box",
-            "match": {
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.the_user_clear_the_input_box()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5171737600,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the user enter a \"name\" in for new folder and clicks arrow",
+            "name": "the \"sample_file.docx\" should disappear in the Favorites page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"name\"",
-                  "offset": 17
+                  "val": "\"sample_file.docx\"",
+                  "offset": 4
                 }
               ],
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUserEnterAInForNewFolderAndClicksArrow(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5242467400,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the user clicks to \"Recent\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Recent\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUserClicksTo(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 15309439800,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the created file is displayed in recent page",
-            "match": {
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.the_created_file_is_displayed_in_recent_page()"
+              "location": "com.symund.step_definitions.AddRemoveFileFavouriteStepDefs.the_should_disappear_in_the_Favorites_page(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Recent"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5213437200,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is logged in as \"Employee1\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Employee1\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.symund.step_definitions.LoginStepDefs.the_user_is_logged_in_as(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 149543000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user clicks plus sign",
-            "match": {
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUserClicksPlusSign()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-13T15:53:24.629Z",
-        "before": [
-          {
-            "result": {
-              "duration": 6028889500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.symund.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 24,
-        "name": "create a document to be seen recent tab",
-        "description": "",
-        "id": "the-user-should-be-able-to-see-recently-uploaded/created-file(s)-or-folder-under-recent-tab;create-a-document-to-be-seen-recent-tab",
-        "after": [
-          {
-            "result": {
-              "duration": 782617600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.symund.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2074028300,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "the user clicks New text document box",
-            "match": {
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUserClicksNewTextDocumentBox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5136832100,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "the user enter a \"name\" in for new text and clicks arrow",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"name\"",
-                  "offset": 17
-                }
-              ],
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUserEnterAInForNewTextAndClicksArrow(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3087422100,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "the user should be able to see the text and click exit",
-            "match": {
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.the_user_should_be_able_to_see_the_text_and_click_exit()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5227604500,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "the user clicks to \"Recent\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Recent\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.theUserClicksTo(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 10302835100,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "the created text  is displayed in recent tab",
-            "match": {
-              "location": "com.symund.step_definitions.RecentUploadedFiles_StepDefs.the_created_text_is_displayed_in_recent_tab()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Recent"
+            "name": "@SYM-167"
           }
         ]
       }
     ],
-    "name": "the user should be able to see recently uploaded/created file(s) or folder under Recent tab",
+    "name": "Add and remove file to favourites",
     "description": "",
-    "id": "the-user-should-be-able-to-see-recently-uploaded/created-file(s)-or-folder-under-recent-tab",
+    "id": "add-and-remove-file-to-favourites",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/RecentUploadedFiles.feature",
+    "uri": "file:src/test/resources/features/AddRemoveFilefavorite.feature",
     "tags": [
       {
-        "name": "@Recent",
+        "name": "@SYM-167",
         "type": "Tag",
         "location": {
-          "line": 2,
+          "line": 1,
           "column": 1
         }
       }
